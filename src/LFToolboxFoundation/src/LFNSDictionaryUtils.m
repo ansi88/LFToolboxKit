@@ -6,9 +6,9 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFNSDictionaryUtilities.h"
+#import "LFNSDictionaryUtils.h"
 
-@implementation LFNSDictionaryUtilities
+@implementation LFNSDictionaryUtils
 
 
 + (NSString *) jsonStringEncoded:(NSDictionary *) dictionary{

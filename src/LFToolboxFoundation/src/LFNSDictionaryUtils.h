@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LFNSDictionaryUtilities : NSObject
+@interface LFNSDictionaryUtils : NSObject
 
 
 /// 编码为 json 字符串。 如果出错则返回nil。 内容支持NSString/NSNumber/NSDictionary/NSArray

@@ -6,9 +6,9 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFNSArrayUtilities.h"
+#import "LFNSArrayUtils.h"
 
-@implementation LFNSArrayUtilities
+@implementation LFNSArrayUtils
 
 + (NSString *) jsonStringEncoded:(NSArray *) array{
     

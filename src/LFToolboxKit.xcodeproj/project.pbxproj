@@ -14,8 +14,8 @@
 		CA8A248E1D24C045002731BC /* LFMathTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A248D1D24C045002731BC /* LFMathTestCase.m */; };
 		CA8A24941D24CA89002731BC /* LFPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24931D24CA89002731BC /* LFPaths.m */; };
 		CA8A24A51D24EF26002731BC /* LFViewRecycler.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24A41D24EF26002731BC /* LFViewRecycler.m */; };
-		CA8A24AC1D2610EE002731BC /* LFNSArrayUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24AB1D2610EE002731BC /* LFNSArrayUtilities.m */; };
-		CA8A24AF1D262096002731BC /* LFNSDictionaryUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24AE1D262096002731BC /* LFNSDictionaryUtilities.m */; };
+		CA8A24AC1D2610EE002731BC /* LFNSArrayUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24AB1D2610EE002731BC /* LFNSArrayUtils.m */; };
+		CA8A24AF1D262096002731BC /* LFNSDictionaryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24AE1D262096002731BC /* LFNSDictionaryUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,10 +87,10 @@
 		CA8A24A71D24F008002731BC /* LFUIKitDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFUIKitDefines.h; sourceTree = "<group>"; };
 		CA8A24A81D24F017002731BC /* LFFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFFoundation.h; sourceTree = "<group>"; };
 		CA8A24A91D24F032002731BC /* LFFoundationDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFFoundationDefines.h; sourceTree = "<group>"; };
-		CA8A24AA1D2610EE002731BC /* LFNSArrayUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSArrayUtilities.h; sourceTree = "<group>"; };
-		CA8A24AB1D2610EE002731BC /* LFNSArrayUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSArrayUtilities.m; sourceTree = "<group>"; };
-		CA8A24AD1D262096002731BC /* LFNSDictionaryUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSDictionaryUtilities.h; sourceTree = "<group>"; };
-		CA8A24AE1D262096002731BC /* LFNSDictionaryUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSDictionaryUtilities.m; sourceTree = "<group>"; };
+		CA8A24AA1D2610EE002731BC /* LFNSArrayUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSArrayUtils.h; sourceTree = "<group>"; };
+		CA8A24AB1D2610EE002731BC /* LFNSArrayUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSArrayUtils.m; sourceTree = "<group>"; };
+		CA8A24AD1D262096002731BC /* LFNSDictionaryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSDictionaryUtils.h; sourceTree = "<group>"; };
+		CA8A24AE1D262096002731BC /* LFNSDictionaryUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSDictionaryUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,11 +137,11 @@
 		CA8A24381D24BDB7002731BC = {
 			isa = PBXGroup;
 			children = (
-				CA8A24531D24BEB3002731BC /* LFCore */,
-				CA8A24661D24BF37002731BC /* LFFoundation */,
-				CA8A249A1D24EE95002731BC /* LFUIKit */,
-				CA8A24741D24BFBA002731BC /* LFCoreTests */,
-				CA8A24831D24C01D002731BC /* LFFoundationTests */,
+				CA8A24531D24BEB3002731BC /* LFToolboxCore */,
+				CA8A24661D24BF37002731BC /* LFToolboxFoundation */,
+				CA8A249A1D24EE95002731BC /* LFToolboxUIKit */,
+				CA8A24741D24BFBA002731BC /* LFToolboxCoreTests */,
+				CA8A24831D24C01D002731BC /* LFToolboxFoundationTests */,
 				CA8A24421D24BDB7002731BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -158,12 +158,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CA8A24531D24BEB3002731BC /* LFCore */ = {
+		CA8A24531D24BEB3002731BC /* LFToolboxCore */ = {
 			isa = PBXGroup;
 			children = (
 				CA8A245C1D24BEFE002731BC /* src */,
 			);
-			path = LFCore;
+			path = LFToolboxCore;
 			sourceTree = "<group>";
 		};
 		CA8A245C1D24BEFE002731BC /* src */ = {
@@ -179,12 +179,12 @@
 			path = src;
 			sourceTree = "<group>";
 		};
-		CA8A24661D24BF37002731BC /* LFFoundation */ = {
+		CA8A24661D24BF37002731BC /* LFToolboxFoundation */ = {
 			isa = PBXGroup;
 			children = (
 				CA8A246E1D24BF44002731BC /* src */,
 			);
-			path = LFFoundation;
+			path = LFToolboxFoundation;
 			sourceTree = "<group>";
 		};
 		CA8A246E1D24BF44002731BC /* src */ = {
@@ -192,38 +192,38 @@
 			children = (
 				CA8A24A81D24F017002731BC /* LFFoundation.h */,
 				CA8A24A91D24F032002731BC /* LFFoundationDefines.h */,
-				CA8A24AA1D2610EE002731BC /* LFNSArrayUtilities.h */,
-				CA8A24AB1D2610EE002731BC /* LFNSArrayUtilities.m */,
-				CA8A24AD1D262096002731BC /* LFNSDictionaryUtilities.h */,
-				CA8A24AE1D262096002731BC /* LFNSDictionaryUtilities.m */,
+				CA8A24AA1D2610EE002731BC /* LFNSArrayUtils.h */,
+				CA8A24AB1D2610EE002731BC /* LFNSArrayUtils.m */,
+				CA8A24AD1D262096002731BC /* LFNSDictionaryUtils.h */,
+				CA8A24AE1D262096002731BC /* LFNSDictionaryUtils.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
 		};
-		CA8A24741D24BFBA002731BC /* LFCoreTests */ = {
+		CA8A24741D24BFBA002731BC /* LFToolboxCoreTests */ = {
 			isa = PBXGroup;
 			children = (
 				CA8A24771D24BFBA002731BC /* Info.plist */,
 				CA8A248D1D24C045002731BC /* LFMathTestCase.m */,
 			);
-			path = LFCoreTests;
+			path = LFToolboxCoreTests;
 			sourceTree = "<group>";
 		};
-		CA8A24831D24C01D002731BC /* LFFoundationTests */ = {
+		CA8A24831D24C01D002731BC /* LFToolboxFoundationTests */ = {
 			isa = PBXGroup;
 			children = (
 				CA8A24841D24C01D002731BC /* LFFoundationTests.m */,
 				CA8A24861D24C01D002731BC /* Info.plist */,
 			);
-			path = LFFoundationTests;
+			path = LFToolboxFoundationTests;
 			sourceTree = "<group>";
 		};
-		CA8A249A1D24EE95002731BC /* LFUIKit */ = {
+		CA8A249A1D24EE95002731BC /* LFToolboxUIKit */ = {
 			isa = PBXGroup;
 			children = (
 				CA8A24A21D24EEC4002731BC /* src */,
 			);
-			path = LFUIKit;
+			path = LFToolboxUIKit;
 			sourceTree = "<group>";
 		};
 		CA8A24A21D24EEC4002731BC /* src */ = {
@@ -405,8 +405,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA8A24AC1D2610EE002731BC /* LFNSArrayUtilities.m in Sources */,
-				CA8A24AF1D262096002731BC /* LFNSDictionaryUtilities.m in Sources */,
+				CA8A24AC1D2610EE002731BC /* LFNSArrayUtils.m in Sources */,
+				CA8A24AF1D262096002731BC /* LFNSDictionaryUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +571,7 @@
 		CA8A247C1D24BFBA002731BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = LFCoreTests/Info.plist;
+				INFOPLIST_FILE = LFToolboxCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youku.LFCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -581,7 +581,7 @@
 		CA8A247D1D24BFBA002731BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = LFCoreTests/Info.plist;
+				INFOPLIST_FILE = LFToolboxCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youku.LFCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -591,7 +591,7 @@
 		CA8A248B1D24C01D002731BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = LFFoundationTests/Info.plist;
+				INFOPLIST_FILE = LFToolboxFoundationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youku.LFFoundationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -601,7 +601,7 @@
 		CA8A248C1D24C01D002731BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = LFFoundationTests/Info.plist;
+				INFOPLIST_FILE = LFToolboxFoundationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youku.LFFoundationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -645,6 +645,7 @@
 				CA8A245A1D24BEB3002731BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA8A246B1D24BF37002731BC /* Build configuration list for PBXNativeTarget "LFFoundation" */ = {
 			isa = XCConfigurationList;
@@ -653,6 +654,7 @@
 				CA8A246D1D24BF37002731BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA8A247B1D24BFBA002731BC /* Build configuration list for PBXNativeTarget "LFCoreTests" */ = {
 			isa = XCConfigurationList;
@@ -661,6 +663,7 @@
 				CA8A247D1D24BFBA002731BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA8A248A1D24C01D002731BC /* Build configuration list for PBXNativeTarget "LFFoundationTests" */ = {
 			isa = XCConfigurationList;
@@ -669,6 +672,7 @@
 				CA8A248C1D24C01D002731BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA8A249F1D24EE95002731BC /* Build configuration list for PBXNativeTarget "LFUIKit" */ = {
 			isa = XCConfigurationList;
@@ -677,6 +681,7 @@
 				CA8A24A11D24EE95002731BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
