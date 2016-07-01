@@ -32,7 +32,7 @@
         NSError *error;
         NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictionary options:NSJSONWritingPrettyPrinted error:&error];
         if (!error) {
-            NSString json = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+            NSString *json = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
             return json;
         }
     }
