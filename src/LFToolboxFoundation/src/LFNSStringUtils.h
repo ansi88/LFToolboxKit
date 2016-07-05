@@ -10,6 +10,10 @@
 
 @interface LFNSStringUtils : NSObject
 
+
+///=============================================================================
+/// @name md5
+///=============================================================================
 //md5
 + (NSString *)md5:(NSString *)hashString;
 
@@ -17,16 +21,35 @@
 + (NSString *)md5WithData:(NSData *)hashData;
 
 
-/// URL encode (UTF8)
-+ (NSString *)lf_stringByURLEncode;
-/// URL decode (UTF8)
-+ (NSString *)lf_stringByURLDecode;
+///=============================================================================
+/// @name Utilities
+///=============================================================================
+/*!
+ 	@method
+ 	@abstract
+ 	@discussion	返回一个随机 UUID 例如 "D1178E50-2A4D-4F1F-9BD3-F6AAB00E06B1"
+ 	@result
+ */
++ (NSString *)stringWithUUID;
 
-/// URL encode
-+ (NSString *)lf_stringByURLEncode:(NSStringEncoding)encoding;
-/// URL decode
-+ (NSString *)lf_stringByURLDecode:(NSStringEncoding)encoding;
+/*!
+ 	@method
+ 	@abstract
+ 	@discussion	切去头尾的空白字符 (空格/换行等)
+ 	@result
+ */
++ (NSString *)stringByTrim:(NSString *)string;
+
+/*!
+ 	@method
+ 	@abstract
+ 	@discussion	是否非空 (例如 nil, @"", @"  ", @"\n" 返回 NO)
+ 	@param 	string
+ 	@result
+ */
++ (BOOL)stringIsNotBlank:(NSString *)string;
 
 
+//缺少 stringURLEncode  stringURLDecode 
 
 @end

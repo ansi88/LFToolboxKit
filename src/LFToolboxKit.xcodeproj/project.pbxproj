@@ -22,6 +22,16 @@
 		CA8A24CC1D2660D6002731BC /* LFCommonDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24C71D2660D6002731BC /* LFCommonDigest.m */; };
 		CA8A24CD1D2660D6002731BC /* LFCommonHMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24C91D2660D6002731BC /* LFCommonHMAC.m */; };
 		CA8A24D21D26714F002731BC /* LFContentSize.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24D11D26714F002731BC /* LFContentSize.m */; };
+		CA8A24DA1D2A01C8002731BC /* LFToolboxUIKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24D91D2A01C8002731BC /* LFToolboxUIKitTests.m */; };
+		CA8A24DC1D2A01C8002731BC /* libLFUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8A24991D24EE95002731BC /* libLFUIKit.a */; };
+		CA8A24E41D2A097C002731BC /* LFNSRegularExpressionUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24E31D2A097C002731BC /* LFNSRegularExpressionUtils.m */; };
+		CA8A24E71D2A191A002731BC /* LFNSJSONSerializationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24E61D2A191A002731BC /* LFNSJSONSerializationUtils.m */; };
+		CA8A250E1D2B5262002731BC /* LFZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A250C1D2B5262002731BC /* LFZipArchive.m */; };
+		CA8A25191D2B528B002731BC /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25111D2B528B002731BC /* ioapi.c */; };
+		CA8A251A1D2B528B002731BC /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25131D2B528B002731BC /* mztools.c */; };
+		CA8A251B1D2B528B002731BC /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25151D2B528B002731BC /* unzip.c */; };
+		CA8A251C1D2B528B002731BC /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25171D2B528B002731BC /* zip.c */; };
+		CA8A251F1D2B60B6002731BC /* LFStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A251E1D2B60B6002731BC /* LFStringEncoding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +55,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = CA8A24B61D266085002731BC;
 			remoteInfo = LFToolboxSecurity;
+		};
+		CA8A24DD1D2A01C8002731BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA8A24391D24BDB7002731BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA8A24981D24EE95002731BC;
+			remoteInfo = LFUIKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -127,6 +144,26 @@
 		CA8A24C91D2660D6002731BC /* LFCommonHMAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCommonHMAC.m; sourceTree = "<group>"; };
 		CA8A24D01D26714F002731BC /* LFContentSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFContentSize.h; sourceTree = "<group>"; };
 		CA8A24D11D26714F002731BC /* LFContentSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFContentSize.m; sourceTree = "<group>"; };
+		CA8A24D71D2A01C8002731BC /* LFToolboxUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFToolboxUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA8A24D91D2A01C8002731BC /* LFToolboxUIKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFToolboxUIKitTests.m; sourceTree = "<group>"; };
+		CA8A24DB1D2A01C8002731BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA8A24E21D2A097C002731BC /* LFNSRegularExpressionUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSRegularExpressionUtils.h; sourceTree = "<group>"; };
+		CA8A24E31D2A097C002731BC /* LFNSRegularExpressionUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSRegularExpressionUtils.m; sourceTree = "<group>"; };
+		CA8A24E51D2A191A002731BC /* LFNSJSONSerializationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSJSONSerializationUtils.h; sourceTree = "<group>"; };
+		CA8A24E61D2A191A002731BC /* LFNSJSONSerializationUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSJSONSerializationUtils.m; sourceTree = "<group>"; };
+		CA8A250B1D2B5262002731BC /* LFZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFZipArchive.h; sourceTree = "<group>"; };
+		CA8A250C1D2B5262002731BC /* LFZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFZipArchive.m; sourceTree = "<group>"; };
+		CA8A25101D2B528B002731BC /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		CA8A25111D2B528B002731BC /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		CA8A25121D2B528B002731BC /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		CA8A25131D2B528B002731BC /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		CA8A25141D2B528B002731BC /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		CA8A25151D2B528B002731BC /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		CA8A25161D2B528B002731BC /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		CA8A25171D2B528B002731BC /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		CA8A25181D2B528B002731BC /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		CA8A251D1D2B60B6002731BC /* LFStringEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFStringEncoding.h; sourceTree = "<group>"; };
+		CA8A251E1D2B60B6002731BC /* LFStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFStringEncoding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +211,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA8A24D41D2A01C8002731BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8A24DC1D2A01C8002731BC /* libLFUIKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -186,6 +231,7 @@
 				CA8A24B81D266085002731BC /* LFToolboxSecurity */,
 				CA8A24741D24BFBA002731BC /* LFToolboxCoreTests */,
 				CA8A24831D24C01D002731BC /* LFToolboxFoundationTests */,
+				CA8A24D81D2A01C8002731BC /* LFToolboxUIKitTests */,
 				CA8A24421D24BDB7002731BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -199,6 +245,7 @@
 				CA8A24821D24C01D002731BC /* LFFoundationTests.xctest */,
 				CA8A24991D24EE95002731BC /* libLFUIKit.a */,
 				CA8A24B71D266085002731BC /* libLFToolboxSecurity.a */,
+				CA8A24D71D2A01C8002731BC /* LFToolboxUIKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,14 +282,23 @@
 		CA8A246E1D24BF44002731BC /* src */ = {
 			isa = PBXGroup;
 			children = (
+				CA8A250F1D2B526C002731BC /* minizip */,
 				CA8A24A81D24F017002731BC /* LFFoundation.h */,
 				CA8A24A91D24F032002731BC /* LFFoundationDefines.h */,
+				CA8A250B1D2B5262002731BC /* LFZipArchive.h */,
+				CA8A250C1D2B5262002731BC /* LFZipArchive.m */,
 				CA8A24AA1D2610EE002731BC /* LFNSArrayUtils.h */,
 				CA8A24AB1D2610EE002731BC /* LFNSArrayUtils.m */,
 				CA8A24AD1D262096002731BC /* LFNSDictionaryUtils.h */,
 				CA8A24AE1D262096002731BC /* LFNSDictionaryUtils.m */,
 				CA8A24B01D2651CF002731BC /* LFNSStringUtils.h */,
 				CA8A24B11D2651CF002731BC /* LFNSStringUtils.m */,
+				CA8A24E21D2A097C002731BC /* LFNSRegularExpressionUtils.h */,
+				CA8A24E31D2A097C002731BC /* LFNSRegularExpressionUtils.m */,
+				CA8A24E51D2A191A002731BC /* LFNSJSONSerializationUtils.h */,
+				CA8A24E61D2A191A002731BC /* LFNSJSONSerializationUtils.m */,
+				CA8A251D1D2B60B6002731BC /* LFStringEncoding.h */,
+				CA8A251E1D2B60B6002731BC /* LFStringEncoding.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -308,6 +364,31 @@
 				CA8A24C91D2660D6002731BC /* LFCommonHMAC.m */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		CA8A24D81D2A01C8002731BC /* LFToolboxUIKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA8A24D91D2A01C8002731BC /* LFToolboxUIKitTests.m */,
+				CA8A24DB1D2A01C8002731BC /* Info.plist */,
+			);
+			path = LFToolboxUIKitTests;
+			sourceTree = "<group>";
+		};
+		CA8A250F1D2B526C002731BC /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				CA8A25101D2B528B002731BC /* crypt.h */,
+				CA8A25111D2B528B002731BC /* ioapi.c */,
+				CA8A25121D2B528B002731BC /* ioapi.h */,
+				CA8A25131D2B528B002731BC /* mztools.c */,
+				CA8A25141D2B528B002731BC /* mztools.h */,
+				CA8A25151D2B528B002731BC /* unzip.c */,
+				CA8A25161D2B528B002731BC /* unzip.h */,
+				CA8A25171D2B528B002731BC /* zip.c */,
+				CA8A25181D2B528B002731BC /* zip.h */,
+			);
+			path = minizip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +499,24 @@
 			productReference = CA8A24B71D266085002731BC /* libLFToolboxSecurity.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		CA8A24D61D2A01C8002731BC /* LFToolboxUIKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA8A24DF1D2A01C8002731BC /* Build configuration list for PBXNativeTarget "LFToolboxUIKitTests" */;
+			buildPhases = (
+				CA8A24D31D2A01C8002731BC /* Sources */,
+				CA8A24D41D2A01C8002731BC /* Frameworks */,
+				CA8A24D51D2A01C8002731BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA8A24DE1D2A01C8002731BC /* PBXTargetDependency */,
+			);
+			name = LFToolboxUIKitTests;
+			productName = LFToolboxUIKitTests;
+			productReference = CA8A24D71D2A01C8002731BC /* LFToolboxUIKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -445,6 +544,9 @@
 					CA8A24B61D266085002731BC = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					CA8A24D61D2A01C8002731BC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 				};
 			};
 			buildConfigurationList = CA8A243C1D24BDB7002731BC /* Build configuration list for PBXProject "LFToolboxKit" */;
@@ -461,10 +563,11 @@
 			targets = (
 				CA8A24511D24BEB3002731BC /* LFCore */,
 				CA8A24641D24BF37002731BC /* LFFoundation */,
-				CA8A24721D24BFBA002731BC /* LFCoreTests */,
-				CA8A24811D24C01D002731BC /* LFFoundationTests */,
 				CA8A24981D24EE95002731BC /* LFUIKit */,
 				CA8A24B61D266085002731BC /* LFToolboxSecurity */,
+				CA8A24721D24BFBA002731BC /* LFCoreTests */,
+				CA8A24811D24C01D002731BC /* LFFoundationTests */,
+				CA8A24D61D2A01C8002731BC /* LFToolboxUIKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -478,6 +581,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CA8A24801D24C01D002731BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA8A24D51D2A01C8002731BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -534,11 +644,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA8A250E1D2B5262002731BC /* LFZipArchive.m in Sources */,
+				CA8A251B1D2B528B002731BC /* unzip.c in Sources */,
 				CA8A24CB1D2660D6002731BC /* LFCommonCryptor.m in Sources */,
 				CA8A24CD1D2660D6002731BC /* LFCommonHMAC.m in Sources */,
 				CA8A24CA1D2660D6002731BC /* LFCCHexStringEncoding.m in Sources */,
+				CA8A251F1D2B60B6002731BC /* LFStringEncoding.m in Sources */,
+				CA8A251A1D2B528B002731BC /* mztools.c in Sources */,
 				CA8A24D21D26714F002731BC /* LFContentSize.m in Sources */,
+				CA8A24E71D2A191A002731BC /* LFNSJSONSerializationUtils.m in Sources */,
+				CA8A25191D2B528B002731BC /* ioapi.c in Sources */,
+				CA8A251C1D2B528B002731BC /* zip.c in Sources */,
 				CA8A24CC1D2660D6002731BC /* LFCommonDigest.m in Sources */,
+				CA8A24E41D2A097C002731BC /* LFNSRegularExpressionUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA8A24D31D2A01C8002731BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8A24DA1D2A01C8002731BC /* LFToolboxUIKitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +685,11 @@
 			isa = PBXTargetDependency;
 			target = CA8A24B61D266085002731BC /* LFToolboxSecurity */;
 			targetProxy = CA8A24CE1D2664CE002731BC /* PBXContainerItemProxy */;
+		};
+		CA8A24DE1D2A01C8002731BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA8A24981D24EE95002731BC /* LFUIKit */;
+			targetProxy = CA8A24DD1D2A01C8002731BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -757,6 +888,26 @@
 			};
 			name = Release;
 		};
+		CA8A24E01D2A01C8002731BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LFToolboxUIKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youku.LFToolboxUIKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CA8A24E11D2A01C8002731BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LFToolboxUIKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youku.LFToolboxUIKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -819,6 +970,14 @@
 			buildConfigurations = (
 				CA8A24BE1D266086002731BC /* Debug */,
 				CA8A24BF1D266086002731BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CA8A24DF1D2A01C8002731BC /* Build configuration list for PBXNativeTarget "LFToolboxUIKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA8A24E01D2A01C8002731BC /* Debug */,
+				CA8A24E11D2A01C8002731BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

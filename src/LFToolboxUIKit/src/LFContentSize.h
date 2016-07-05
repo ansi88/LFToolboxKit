@@ -11,6 +11,9 @@
 
 @interface LFContentSize : NSObject
 
+///=============================================================================
+/// @name 计算字符串的绘制大小
+///=============================================================================
 // 计算内容的size
 + (CGSize) sizeForContent:(NSString *)content size:(CGSize)size font:(UIFont *)font mode:(NSLineBreakMode)lineBreakMode;
 

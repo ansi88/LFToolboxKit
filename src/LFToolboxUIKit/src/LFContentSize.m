@@ -12,6 +12,8 @@
 
 @implementation LFContentSize
 
+#pragma mark --绘制
+// 计算内容的size
 + (CGSize) sizeForContent:(NSString *)content size:(CGSize)size font:(UIFont *)font mode:(NSLineBreakMode)lineBreakMode{
     
     CGSize result;

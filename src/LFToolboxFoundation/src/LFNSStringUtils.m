@@ -12,7 +12,7 @@
 @implementation LFNSStringUtils
 
 
-#pragma mark --Hash
+#pragma mark --md5
 + (NSString *)md5:(NSString *)hashString{
     
    return [self md5WithData:[hashString dataUsingEncoding:NSUTF8StringEncoding]];
@@ -28,5 +28,36 @@
     return md5String;
 }
 
+#pragma mark --Utilities
 
++ (NSString *)stringWithUUID{
+    
+    CFUUIDRef uuid = CFUUIDCreate(NULL);
+    CFStringRef string = CFUUIDCreateString(NULL, uuid);
+    CFRelease(uuid);
+    return (__bridge_transfer NSString *)string);
+}
+
++ (NSString *)stringByTrim:(NSString *)string{
+    
+    NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    return [string stringByTrimmingCharactersInSet:set];
+}
+
++ (BOOL)stringIsNotBlank:(NSString *)string{
+    
+    if (!string) {
+        return NO;
+    }else if ([@"" isEqualToString:string] || [@"(null)" isEqualToString:string]){
+        return NO;
+    }
+    NSCharacterSet *blank = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    for (NSInteger i = 0; i < string.length; i++) {
+        unichar c = [string characterAtIndex:i];
+        if (![blank characterIsMember:c]) {
+            return YES;
+        }
+    }
+    return NO;
+}
 @end
