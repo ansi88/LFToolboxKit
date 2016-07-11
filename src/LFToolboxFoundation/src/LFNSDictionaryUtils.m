@@ -8,6 +8,44 @@
 
 #import "LFNSDictionaryUtils.h"
 
+static NSNumber *NSNumberFromID(id value) {
+    static NSCharacterSet *dot;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dot = [NSCharacterSet characterSetWithRange:NSMakeRange('.', 1)];
+    });
+    if (!value || value == [NSNull null]) return nil;
+    if ([value isKindOfClass:[NSNumber class]]) return value;
+    if ([value isKindOfClass:[NSString class]]) {
+        NSString *lower = ((NSString *)value).lowercaseString;
+        if ([lower isEqualToString:@"true"] || [lower isEqualToString:@"yes"]) return @(YES);
+        if ([lower isEqualToString:@"false"] || [lower isEqualToString:@"no"]) return @(NO);
+        if ([lower isEqualToString:@"nil"] || [lower isEqualToString:@"null"]) return nil;
+        if ([lower isEqualToString:@"<nil>"] || [lower isEqualToString:@"<null>"]) return nil;
+        if ([(NSString *)value rangeOfCharacterFromSet:dot].location != NSNotFound) {
+            return @(((NSString *)value).doubleValue);
+        } else {
+            return @(((NSString *)value).longLongValue);
+        }
+    }
+    return nil;
+}
+
+#define RETURN_VALUE(_type_)                          \
+    if (!dictionary) return def;                      \
+    if (!key) return def;                             \
+    id value = self[key];                             \
+    if (!value || value == [NSNull null]) return def; \
+    if ([value isKindOfClass:[NSNumber class]])       \
+        return ((NSNumber *)value)._type_;            \
+    if ([value isKindOfClass:[NSString class]]) {     \
+        NSNumber *num = NSNumberFromID(value);        \
+        if (!num) return def;                         \
+        return num._type_;                            \
+    }                                                 \
+return def;
+
+
 @implementation LFNSDictionaryUtils
 
 + (NSArray *)allKeysSorted:(NSDictionary *)dictionary{
@@ -24,6 +62,63 @@
     }]
     return arr;
 
+}
+
+#pragma mark - Dictionary Value Getter
+///=============================================================================
+/// @name Dictionary Value Getter
+///=============================================================================
++ (double)dictionary:(NSDictionary *)dictionary doubleForKey:(NSString *)key withDefault:(double)def{
+    
+    RETURN_VALUE(doubleValue);
+}
+
++ (float)dictionary:(NSDictionary *)dictionary floatForKey:(NSString *)key withDefault:(float)def{
+    
+    RETURN_VALUE(floatValue);
+}
+
++ (int)dictionary:(NSDictionary *)dictionary intForKey:(NSString *)key withDefault:(int)def{
+    
+    RETURN_VALUE(intValue);
+}
+
++ (NSInteger)dictionary:(NSDictionary *)dictionary integerForKey:(NSString *)key withDefault:(NSInteger)def{
+    
+    RETURN_VALUE(integerValue);
+}
+
++ (NSUInteger)dictionary:(NSDictionary *)dictionary unsignedIntegerForKey:(NSString *)key withDefault:(NSUInteger)def{
+    
+    RETURN_VALUE(unsignedIntegerValue);
+}
+
++ (long long)dictionary:(NSDictionary *)dictionary longLongForKey:(NSString *)key withDefault:(long long)def{
+    
+    RETURN_VALUE(longLongValue);
+}
+
++ (BOOL)dictionary:(NSDictionary *)dictionary boolForKey:(NSString *)key withDefault:(BOOL)def{
+    
+    RETURN_VALUE(boolValue);
+}
+
++ (NSString *)dictionary:(NSDictionary *)dictionary stringForKey:(NSString *)key withDefault:(NSString *)def{
+    
+    if (!dictionary) return def;
+    if (!key) return def;
+    id value = dictionary[key];
+    if (!value || value == [NSNull null]) return def;
+    if ([value isKindOfClass:[NSString class]]) return value;
+    if ([value isKindOfClass:[NSNumber class]]) return ((NSNumber *)value).stringValue;
+    if ([value isKindOfClass:[NSURL class]]) return ((NSURL *)value).absoluteString;
+}
+
++ (void)dictionary:(NSMutableDictionary *)dictionary setObject:(id)object forKey:(id<NSCopying>)key{
+    
+    if (object && key) {
+        [dictionary setObject:object forKey:key];
+    }
 }
 
 @end

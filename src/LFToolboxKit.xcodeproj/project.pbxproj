@@ -39,6 +39,7 @@
 		CA8A25441D2F8EC0002731BC /* LFNSBundleUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25431D2F8EC0002731BC /* LFNSBundleUtils.m */; };
 		CA8A25471D2F9B29002731BC /* LFNSDataUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25461D2F9B29002731BC /* LFNSDataUtils.m */; };
 		CA8A254A1D2F9ECA002731BC /* LFNSDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25491D2F9ECA002731BC /* LFNSDateUtils.m */; };
+		CACCB5591D334F22004AEA7A /* LFNSNotificationCenterUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CACCB5581D334F22004AEA7A /* LFNSNotificationCenterUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,6 +200,8 @@
 		CA8A25461D2F9B29002731BC /* LFNSDataUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSDataUtils.m; sourceTree = "<group>"; };
 		CA8A25481D2F9ECA002731BC /* LFNSDateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSDateUtils.h; sourceTree = "<group>"; };
 		CA8A25491D2F9ECA002731BC /* LFNSDateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSDateUtils.m; sourceTree = "<group>"; };
+		CACCB5571D334F22004AEA7A /* LFNSNotificationCenterUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSNotificationCenterUtils.h; sourceTree = "<group>"; };
+		CACCB5581D334F22004AEA7A /* LFNSNotificationCenterUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSNotificationCenterUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +343,8 @@
 				CA8A25461D2F9B29002731BC /* LFNSDataUtils.m */,
 				CA8A25481D2F9ECA002731BC /* LFNSDateUtils.h */,
 				CA8A25491D2F9ECA002731BC /* LFNSDateUtils.m */,
+				CACCB5571D334F22004AEA7A /* LFNSNotificationCenterUtils.h */,
+				CACCB5581D334F22004AEA7A /* LFNSNotificationCenterUtils.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -652,6 +657,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CACCB5591D334F22004AEA7A /* LFNSNotificationCenterUtils.m in Sources */,
 				CA8A24941D24CA89002731BC /* LFPaths.m in Sources */,
 				CA8A24601D24BF0E002731BC /* LFMath.m in Sources */,
 				CA8A24B21D2651CF002731BC /* LFNSStringUtils.m in Sources */,
@@ -1040,6 +1046,7 @@
 				CA8A24BF1D266086002731BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA8A24DF1D2A01C8002731BC /* Build configuration list for PBXNativeTarget "LFToolboxUIKitTests" */ = {
 			isa = XCConfigurationList;
@@ -1048,6 +1055,7 @@
 				CA8A24E11D2A01C8002731BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
