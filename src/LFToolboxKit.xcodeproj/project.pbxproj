@@ -39,6 +39,7 @@
 		CA8A25471D2F9B29002731BC /* LFNSDataUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25461D2F9B29002731BC /* LFNSDataUtils.m */; };
 		CA8A254A1D2F9ECA002731BC /* LFNSDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25491D2F9ECA002731BC /* LFNSDateUtils.m */; };
 		CACCB5591D334F22004AEA7A /* LFNSNotificationCenterUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CACCB5581D334F22004AEA7A /* LFNSNotificationCenterUtils.m */; };
+		CACCB55C1D3398B2004AEA7A /* LFNSDictionaryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CACCB55B1D3398B2004AEA7A /* LFNSDictionaryUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,6 +200,8 @@
 		CA8A25491D2F9ECA002731BC /* LFNSDateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSDateUtils.m; sourceTree = "<group>"; };
 		CACCB5571D334F22004AEA7A /* LFNSNotificationCenterUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSNotificationCenterUtils.h; sourceTree = "<group>"; };
 		CACCB5581D334F22004AEA7A /* LFNSNotificationCenterUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSNotificationCenterUtils.m; sourceTree = "<group>"; };
+		CACCB55A1D3398B2004AEA7A /* LFNSDictionaryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSDictionaryUtils.h; sourceTree = "<group>"; };
+		CACCB55B1D3398B2004AEA7A /* LFNSDictionaryUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSDictionaryUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +343,8 @@
 				CA8A25491D2F9ECA002731BC /* LFNSDateUtils.m */,
 				CACCB5571D334F22004AEA7A /* LFNSNotificationCenterUtils.h */,
 				CACCB5581D334F22004AEA7A /* LFNSNotificationCenterUtils.m */,
+				CACCB55A1D3398B2004AEA7A /* LFNSDictionaryUtils.h */,
+				CACCB55B1D3398B2004AEA7A /* LFNSDictionaryUtils.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -653,6 +658,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CACCB5591D334F22004AEA7A /* LFNSNotificationCenterUtils.m in Sources */,
+				CACCB55C1D3398B2004AEA7A /* LFNSDictionaryUtils.m in Sources */,
 				CA8A24941D24CA89002731BC /* LFPaths.m in Sources */,
 				CA8A24601D24BF0E002731BC /* LFMath.m in Sources */,
 				CA8A24B21D2651CF002731BC /* LFNSStringUtils.m in Sources */,

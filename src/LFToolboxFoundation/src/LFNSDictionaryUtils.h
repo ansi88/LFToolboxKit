@@ -28,7 +28,7 @@
 
 + (NSInteger)dictionary:(NSDictionary *)dictionary integerForKey:(NSString *)key withDefault:(NSInteger)def;
 
-+ (NSUInteger)dictionary:(NSDictionary *)dictionary unsignedIntegerForKey:(NSString *)key withDefault:(NSInteger)def;
++ (NSUInteger)dictionary:(NSDictionary *)dictionary unsignedIntegerForKey:(NSString *)key withDefault:(NSUInteger)def;
 
 + (long long)dictionary:(NSDictionary *)dictionary longLongForKey:(NSString *)key withDefault:(long long)def;
 

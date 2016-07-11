@@ -34,7 +34,7 @@ static NSNumber *NSNumberFromID(id value) {
 #define RETURN_VALUE(_type_)                          \
     if (!dictionary) return def;                      \
     if (!key) return def;                             \
-    id value = self[key];                             \
+    id value = dictionary[key];                             \
     if (!value || value == [NSNull null]) return def; \
     if ([value isKindOfClass:[NSNumber class]])       \
         return ((NSNumber *)value)._type_;            \
@@ -112,6 +112,7 @@ static NSNumber *NSNumberFromID(id value) {
     if ([value isKindOfClass:[NSString class]]) return value;
     if ([value isKindOfClass:[NSNumber class]]) return ((NSNumber *)value).stringValue;
     if ([value isKindOfClass:[NSURL class]]) return ((NSURL *)value).absoluteString;
+    return nil;
 }
 
 + (void)dictionary:(NSMutableDictionary *)dictionary setObject:(id)object forKey:(id<NSCopying>)key{
