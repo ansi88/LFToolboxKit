@@ -60,4 +60,32 @@
     }
     return NO;
 }
+
++ (NSString *)filenameWithString:(NSString *)string  appendingByNameScale:(CGFloat)scale{
+    
+    if (scale - 1 <= __FLT_EPSILON__ || string.length == 0 || [string hasSuffix:@"/"]) return string.copy;
+    return [string stringByAppendingFormat:@"@%@x", @(scale)];
+
+}
+
++ (NSString *)filenameWithString:(NSString *)string  appendingByPathScale:(CGFloat)scale{
+    
+    if (scale - 1 <= __FLT_EPSILON__ || string.length == 0 || [string hasSuffix:@"/"]) return string.copy;
+    NSString *ext = string.pathExtension;
+    NSRange extRange = NSMakeRange(string.length - ext.length, 0);
+    if (ext.length > 0) extRange.location -= 1;
+    NSString *scaleStr = [NSString stringWithFormat:@"@%@x", @(scale)];
+    return [string stringByReplacingCharactersInRange:extRange withString:scaleStr];
+}
+
++ (CGFloat)pathScaleWithString:(NSString *)string{
+    
+    if (string.length == 0 || [string hasSuffix:@"/"]) return 1;
+    NSString *name = string.stringByDeletingPathExtension;
+    __block CGFloat scale = 1;
+    [name lf_enumerateRegexMatches:@"@[0-9]+\\.?[0-9]*x$" usingBlock: ^(NSString *match, NSInteger index, NSRange matchRange, BOOL *stop) {
+        scale = [match substringWithRange:NSMakeRange(1, match.length - 2)].doubleValue;
+    }];
+    return scale;
+}
 @end

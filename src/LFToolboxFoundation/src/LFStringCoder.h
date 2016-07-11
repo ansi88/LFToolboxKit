@@ -41,7 +41,7 @@ typedef NS_ENUM(NSInteger, LFCommonCoderType){
  	@param 	encoding 	编码方式
  	@result
  */
-- (NSString *)encodeString:(NSString *)string  usingEncoding:(NSStringEncoding)encoding;
+- (NSString *)encodeString:(NSString *)string  encoding:(NSStringEncoding)encoding;
 
 /*!
  	@method
@@ -51,13 +51,12 @@ typedef NS_ENUM(NSInteger, LFCommonCoderType){
  	@param 	encoding 	解码方法
  	@result
  */
-- (NSString *)decodeString:(NSString *)string  usingEncoding:(NSStringEncoding)encoding;
-
+- (NSString *)decodeString:(NSString *)string  encoding:(NSStringEncoding)encoding;
 
 
 @end
 
-@interface LFStringCoding : NSObject<LFStringCoding>
+@interface LFStringCoder : NSObject<LFStringCoding>
 
 
 /*!
@@ -79,6 +78,28 @@ typedef NS_ENUM(NSInteger, LFCommonCoderType){
 + (id<LFStringCoding>)URLCoder;
 
 
+@end
 
+#pragma mark --_LFStringCommonEncoding
+
+@interface _LFStringCommonCoder : LFStringCoder
+{
+@private
+    NSData *_charMapData;
+    char *_charMap;
+    int _reverseCharMap[128];
+    int _shift;
+    int _mask;
+    int _padLength;
+}
+@property (nonatomic, assign) BOOL doPad;
+
+@property (nonatomic, assign) char paddingChar;
+
+- (instancetype)initWithString:(NSString *)string;
+
+- (NSString *)encode:(NSData *)data;
+
+- (NSData *)decode:(NSString *)string;
 
 @end

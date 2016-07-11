@@ -10,4 +10,20 @@
 
 @implementation LFNSDictionaryUtils
 
++ (NSArray *)allKeysSorted:(NSDictionary *)dictionary{
+    
+    return [[dictionary allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+}
+
++ (NSArray *)allValuesSortedByKeys:(NSDictionary *)dictionary{
+    
+    NSArray *sortedKeys = [self allKeysSorted:dictionary];
+    NSMutableArray *arr = [[NSMutableArray alloc] init];
+    [sortedKeys enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [arr addObject:obj];
+    }]
+    return arr;
+
+}
+
 @end

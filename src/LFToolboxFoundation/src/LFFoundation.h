@@ -10,5 +10,6 @@
 #define LFFoundation_h
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #endif /* LFFoundation_h */

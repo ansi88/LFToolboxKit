@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFStringEncoding.h"
+#import "LFStringCoder.h"
 #import "LFFoundationDefines.h"
 
 #if !defined(_LFDevAssert)
@@ -28,6 +28,8 @@
     #define _LFDevAssert(condition, desc, ...) do {} while(0)
 #endif /*_LFDevAssert */
 
+static BOOL g_allowedCharacters = NO;
+static BOOL g_stringByRemovingPercentEncoding = NO;
 
 enum {
     kUnknownChar = -1,
@@ -40,25 +42,7 @@ enum {
 
 #pragma mark --_LFStringCommonEncoding
 
-@interface _LFStringCommonEncoding : LFStringCoding
-{
-@private
-    NSData *_charMapData;
-    char *_charMap;
-    int _reverseCharMap[128];
-    int _shift;
-    int _mask;
-    int _padLength;
-}
-@property (nonatomic, assign) BOOL doPad;
-
-@property (nonatomic, assign) char paddingChar;
-
-- (instancetype)initWithString:(NSString *)string;
-
-@end
-
-@implementation _LFStringCommonEncoding
+@implementation _LFStringCommonCoder
 
 #pragma mark --life cycle
 - (instancetype)initWithString:(NSString *)string {
@@ -95,7 +79,7 @@ enum {
 }
 
 #pragma mark --protrol LFStringCoding
-- (NSString *)encodeString:(NSString *)string  usingEncoding:(NSStringEncoding)encoding{
+- (NSString *)encodeString:(NSString *)string  encoding:(NSStringEncoding)encoding{
     
     NSData *data = [string dataUsingEncoding:encoding ? encoding : NSUTF8StringEncoding];
     return [self encode:data];
@@ -152,7 +136,7 @@ enum {
 }
 
 
-- (NSString *)decodeString:(NSString *)string  usingEncoding:(NSStringEncoding)encoding{
+- (NSString *)decodeString:(NSString *)string  encoding:(NSStringEncoding)encoding{
     
     NSData *ret = [self decode:string];
     return [[NSString alloc] initWithData:ret encoding:encoding ? encoding : NSUTF8StringEncoding];
@@ -238,18 +222,24 @@ enum {
 @end
 
 #pragma mark --_LFStringURLEncoding
-@interface _LFStringURLEncoding : LFStringCoding
+@interface _LFStringURLCoder : LFStringCoder
 
 
 @end
 
-@implementation _LFStringURLEncoding
+@implementation _LFStringURLCoder
+
++ (void)initialize
+{
+    g_allowedCharacters = [NSString instancesRespondToSelector:@selector(stringByAddingPercentEncodingWithAllowedCharacters:)];
+    g_stringByRemovingPercentEncoding = [NSString instancesRespondToSelector:@selector(stringByRemovingPercentEncoding)];
+}
 
 #pragma mark --protrol LFStringCoding
-- (NSString *)encodeString:(NSString *)string  usingEncoding:(NSStringEncoding)encoding{
+- (NSString *)encodeString:(NSString *)string  encoding:(NSStringEncoding)encoding{
     
     static NSString * const  allowedCharacters = @"!*'();:@&=+$,/?%#[]";
-    BOOL g_allowedCharacters = [NSString instancesRespondToSelector:@selector(stringByAddingPercentEncodingWithAllowedCharacters:)];
+    g_allowedCharacters = [NSString instancesRespondToSelector:@selector(stringByAddingPercentEncodingWithAllowedCharacters:)];
     if (g_allowedCharacters) {
         static NSCharacterSet * characterSet = nil;
         if (characterSet == nil) {
@@ -276,9 +266,9 @@ enum {
 
 }
 
-- (NSString *)decodeString:(NSString *)string  usingEncoding:(NSStringEncoding)encoding{
+- (NSString *)decodeString:(NSString *)string  encoding:(NSStringEncoding)encoding{
     
-    BOOL g_stringByRemovingPercentEncoding = [NSString instancesRespondToSelector:@selector(stringByRemovingPercentEncoding)];
+    g_stringByRemovingPercentEncoding = [NSString instancesRespondToSelector:@selector(stringByRemovingPercentEncoding)];
     NSMutableString *resultString = [NSMutableString stringWithString:string];
     [resultString replaceOccurrencesOfString:@"+"
                                   withString:@" "
@@ -300,18 +290,18 @@ enum {
 @end
 
 
-@implementation LFStringCoding
+@implementation LFStringCoder
 
 /**
  * 父类的protrol方法暂不实现
  */
 #pragma mark --protrol LFStringCoding
-- (NSString *)encodeString:(NSString *)string  usingEncoding:(NSStringEncoding)encoding{
+- (NSString *)encodeString:(NSString *)string  encoding:(NSStringEncoding)encoding{
     
     return nil;
 }
 
-- (NSString *)decodeString:(NSString *)string  usingEncoding:(NSStringEncoding)encoding{
+- (NSString *)decodeString:(NSString *)string  encoding:(NSStringEncoding)encoding{
     
     return nil;
 }
@@ -322,20 +312,20 @@ enum {
     switch (coderType) {
         case LFBinaryStringEncoding:
         {
-            _LFStringCommonEncoding *ret = [[_LFStringCommonEncoding alloc] initWithString:@"01"];
+            _LFStringCommonCoder *ret = [[_LFStringCommonCoder alloc] initWithString:@"01"];
             return ret;
         }
             break;
         case LFHexStringEncoding:
         {
-            _LFStringCommonEncoding *ret = [[_LFStringCommonEncoding alloc] initWithString:@"0123456789ABCDEF"];
+            _LFStringCommonCoder *ret = [[_LFStringCommonCoder alloc] initWithString:@"0123456789ABCDEF"];
             [ret addDecodeSynonyms:@"AaBbCcDdEeFf"];
             return ret;
         }
             break;
         case LFBase64StringEncoding:
         {
-            _LFStringCommonEncoding *ret = [[_LFStringCommonEncoding alloc] initWithString:@"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"];
+            _LFStringCommonCoder *ret = [[_LFStringCommonCoder alloc] initWithString:@"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"];
             [ret setPaddingChar:'='];
             [ret setDoPad:YES];
             return ret;
@@ -343,7 +333,7 @@ enum {
             break;
         case LFBase64WebsafeStringEncoding:
         {
-            _LFStringCommonEncoding *ret = [[_LFStringCommonEncoding alloc] initWithString:@"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"];
+            _LFStringCommonCoder *ret = [[_LFStringCommonCoder alloc] initWithString:@"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"];
             [ret setPaddingChar:'='];
             [ret setDoPad:YES];
             return ret;
@@ -359,7 +349,7 @@ enum {
 
 + (id<LFStringCoding>)URLCoder{
     
-    _LFStringURLEncoding *ret = [[_LFStringURLEncoding alloc]init];
+    _LFStringURLCoder *ret = [[_LFStringURLCoder alloc]init];
     return ret;
 }
 

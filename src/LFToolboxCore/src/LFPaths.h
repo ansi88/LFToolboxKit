@@ -12,31 +12,6 @@
 extern "C" {
 #endif
     
-    
-    /**
-     * Create a path with the given bundle and the relative path appended.
-     *
-     * @param bundle        The bundle to append relativePath to. If nil, [NSBundle mainBundle]
-     *                           will be used.
-     * @param relativePath  The relative path to append to the bundle's path.
-     *
-     * @returns The bundle path concatenated with the given relative path.
-     */
-    NSString* LFPathForBundleResource(NSBundle* bundle, NSString* relativePath);
-    
-    /**
-     * Create a path with the given bundle and the relative path appended.
-     *
-     * @param bundle        The bundle to append relativePath to. If nil, [NSBundle mainBundle]
-     *                           will be used.
-     * @param relativePath  The relative path to append to the bundle's path.
-     * 
-     * @param type
-     *
-     * @returns The bundle path concatenated with the given relative path.
-     */
-    NSString* LFPathForBundleResourceOfType(NSBundle* bundle, NSString* relativePath, NSString* type);
-    
     /**
      * Create a path with the documents directory and the relative path appended.
      *

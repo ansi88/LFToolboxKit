@@ -14,7 +14,6 @@
 		CA8A248E1D24C045002731BC /* LFMathTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A248D1D24C045002731BC /* LFMathTestCase.m */; };
 		CA8A24941D24CA89002731BC /* LFPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24931D24CA89002731BC /* LFPaths.m */; };
 		CA8A24A51D24EF26002731BC /* LFViewRecycler.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24A41D24EF26002731BC /* LFViewRecycler.m */; };
-		CA8A24AC1D2610EE002731BC /* LFNSArrayUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24AB1D2610EE002731BC /* LFNSArrayUtils.m */; };
 		CA8A24AF1D262096002731BC /* LFNSDictionaryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24AE1D262096002731BC /* LFNSDictionaryUtils.m */; };
 		CA8A24B21D2651CF002731BC /* LFNSStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24B11D2651CF002731BC /* LFNSStringUtils.m */; };
 		CA8A24CA1D2660D6002731BC /* LFCCHexStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24C21D2660D6002731BC /* LFCCHexStringEncoding.m */; };
@@ -31,7 +30,15 @@
 		CA8A251A1D2B528B002731BC /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25131D2B528B002731BC /* mztools.c */; };
 		CA8A251B1D2B528B002731BC /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25151D2B528B002731BC /* unzip.c */; };
 		CA8A251C1D2B528B002731BC /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25171D2B528B002731BC /* zip.c */; };
-		CA8A251F1D2B60B6002731BC /* LFStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A251E1D2B60B6002731BC /* LFStringEncoding.m */; };
+		CA8A251F1D2B60B6002731BC /* LFStringCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A251E1D2B60B6002731BC /* LFStringCoder.m */; };
+		CA8A25221D2BC884002731BC /* LFRSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25211D2BC884002731BC /* LFRSACryptor.m */; };
+		CA8A25251D2DF5AC002731BC /* LFGeometryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25241D2DF5AC002731BC /* LFGeometryUtils.m */; };
+		CA8A25281D2E085C002731BC /* LFUIImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25271D2E085C002731BC /* LFUIImageUtils.m */; };
+		CA8A252E1D2E2992002731BC /* LFGIFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A252C1D2E2992002731BC /* LFGIFImage.m */; };
+		CA8A25311D2E2BE6002731BC /* LFWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25301D2E2BE6002731BC /* LFWeakProxy.m */; };
+		CA8A25441D2F8EC0002731BC /* LFNSBundleUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25431D2F8EC0002731BC /* LFNSBundleUtils.m */; };
+		CA8A25471D2F9B29002731BC /* LFNSDataUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25461D2F9B29002731BC /* LFNSDataUtils.m */; };
+		CA8A254A1D2F9ECA002731BC /* LFNSDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25491D2F9ECA002731BC /* LFNSDateUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +69,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = CA8A24981D24EE95002731BC;
 			remoteInfo = LFUIKit;
+		};
+		CA8A25321D2E2C3C002731BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA8A24391D24BDB7002731BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA8A24511D24BEB3002731BC;
+			remoteInfo = LFCore;
+		};
+		CA8A25341D2E3456002731BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA8A24391D24BDB7002731BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA8A24641D24BF37002731BC;
+			remoteInfo = LFFoundation;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -126,8 +147,6 @@
 		CA8A24A71D24F008002731BC /* LFUIKitDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFUIKitDefines.h; sourceTree = "<group>"; };
 		CA8A24A81D24F017002731BC /* LFFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFFoundation.h; sourceTree = "<group>"; };
 		CA8A24A91D24F032002731BC /* LFFoundationDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFFoundationDefines.h; sourceTree = "<group>"; };
-		CA8A24AA1D2610EE002731BC /* LFNSArrayUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSArrayUtils.h; sourceTree = "<group>"; };
-		CA8A24AB1D2610EE002731BC /* LFNSArrayUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSArrayUtils.m; sourceTree = "<group>"; };
 		CA8A24AD1D262096002731BC /* LFNSDictionaryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSDictionaryUtils.h; sourceTree = "<group>"; };
 		CA8A24AE1D262096002731BC /* LFNSDictionaryUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSDictionaryUtils.m; sourceTree = "<group>"; };
 		CA8A24B01D2651CF002731BC /* LFNSStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSStringUtils.h; sourceTree = "<group>"; };
@@ -162,8 +181,24 @@
 		CA8A25161D2B528B002731BC /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
 		CA8A25171D2B528B002731BC /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
 		CA8A25181D2B528B002731BC /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
-		CA8A251D1D2B60B6002731BC /* LFStringEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFStringEncoding.h; sourceTree = "<group>"; };
-		CA8A251E1D2B60B6002731BC /* LFStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFStringEncoding.m; sourceTree = "<group>"; };
+		CA8A251D1D2B60B6002731BC /* LFStringCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFStringCoder.h; sourceTree = "<group>"; };
+		CA8A251E1D2B60B6002731BC /* LFStringCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFStringCoder.m; sourceTree = "<group>"; };
+		CA8A25201D2BC884002731BC /* LFRSACryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFRSACryptor.h; sourceTree = "<group>"; };
+		CA8A25211D2BC884002731BC /* LFRSACryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFRSACryptor.m; sourceTree = "<group>"; };
+		CA8A25231D2DF5AC002731BC /* LFGeometryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFGeometryUtils.h; sourceTree = "<group>"; };
+		CA8A25241D2DF5AC002731BC /* LFGeometryUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFGeometryUtils.m; sourceTree = "<group>"; };
+		CA8A25261D2E085C002731BC /* LFUIImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUIImageUtils.h; sourceTree = "<group>"; };
+		CA8A25271D2E085C002731BC /* LFUIImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIImageUtils.m; sourceTree = "<group>"; };
+		CA8A252B1D2E2992002731BC /* LFGIFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFGIFImage.h; sourceTree = "<group>"; };
+		CA8A252C1D2E2992002731BC /* LFGIFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFGIFImage.m; sourceTree = "<group>"; };
+		CA8A252F1D2E2BE6002731BC /* LFWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFWeakProxy.h; sourceTree = "<group>"; };
+		CA8A25301D2E2BE6002731BC /* LFWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFWeakProxy.m; sourceTree = "<group>"; };
+		CA8A25421D2F8EC0002731BC /* LFNSBundleUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSBundleUtils.h; sourceTree = "<group>"; };
+		CA8A25431D2F8EC0002731BC /* LFNSBundleUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSBundleUtils.m; sourceTree = "<group>"; };
+		CA8A25451D2F9B29002731BC /* LFNSDataUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSDataUtils.h; sourceTree = "<group>"; };
+		CA8A25461D2F9B29002731BC /* LFNSDataUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSDataUtils.m; sourceTree = "<group>"; };
+		CA8A25481D2F9ECA002731BC /* LFNSDateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSDateUtils.h; sourceTree = "<group>"; };
+		CA8A25491D2F9ECA002731BC /* LFNSDateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSDateUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +302,8 @@
 				CA8A245F1D24BF0E002731BC /* LFMath.m */,
 				CA8A24921D24CA89002731BC /* LFPaths.h */,
 				CA8A24931D24CA89002731BC /* LFPaths.m */,
+				CA8A252F1D2E2BE6002731BC /* LFWeakProxy.h */,
+				CA8A25301D2E2BE6002731BC /* LFWeakProxy.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -287,8 +324,6 @@
 				CA8A24A91D24F032002731BC /* LFFoundationDefines.h */,
 				CA8A250B1D2B5262002731BC /* LFZipArchive.h */,
 				CA8A250C1D2B5262002731BC /* LFZipArchive.m */,
-				CA8A24AA1D2610EE002731BC /* LFNSArrayUtils.h */,
-				CA8A24AB1D2610EE002731BC /* LFNSArrayUtils.m */,
 				CA8A24AD1D262096002731BC /* LFNSDictionaryUtils.h */,
 				CA8A24AE1D262096002731BC /* LFNSDictionaryUtils.m */,
 				CA8A24B01D2651CF002731BC /* LFNSStringUtils.h */,
@@ -297,8 +332,14 @@
 				CA8A24E31D2A097C002731BC /* LFNSRegularExpressionUtils.m */,
 				CA8A24E51D2A191A002731BC /* LFNSJSONSerializationUtils.h */,
 				CA8A24E61D2A191A002731BC /* LFNSJSONSerializationUtils.m */,
-				CA8A251D1D2B60B6002731BC /* LFStringEncoding.h */,
-				CA8A251E1D2B60B6002731BC /* LFStringEncoding.m */,
+				CA8A251D1D2B60B6002731BC /* LFStringCoder.h */,
+				CA8A251E1D2B60B6002731BC /* LFStringCoder.m */,
+				CA8A25421D2F8EC0002731BC /* LFNSBundleUtils.h */,
+				CA8A25431D2F8EC0002731BC /* LFNSBundleUtils.m */,
+				CA8A25451D2F9B29002731BC /* LFNSDataUtils.h */,
+				CA8A25461D2F9B29002731BC /* LFNSDataUtils.m */,
+				CA8A25481D2F9ECA002731BC /* LFNSDateUtils.h */,
+				CA8A25491D2F9ECA002731BC /* LFNSDateUtils.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -338,6 +379,12 @@
 				CA8A24A41D24EF26002731BC /* LFViewRecycler.m */,
 				CA8A24D01D26714F002731BC /* LFContentSize.h */,
 				CA8A24D11D26714F002731BC /* LFContentSize.m */,
+				CA8A25231D2DF5AC002731BC /* LFGeometryUtils.h */,
+				CA8A25241D2DF5AC002731BC /* LFGeometryUtils.m */,
+				CA8A25261D2E085C002731BC /* LFUIImageUtils.h */,
+				CA8A25271D2E085C002731BC /* LFUIImageUtils.m */,
+				CA8A252B1D2E2992002731BC /* LFGIFImage.h */,
+				CA8A252C1D2E2992002731BC /* LFGIFImage.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -353,6 +400,8 @@
 		CA8A24C01D2660B3002731BC /* src */ = {
 			isa = PBXGroup;
 			children = (
+				CA8A25201D2BC884002731BC /* LFRSACryptor.h */,
+				CA8A25211D2BC884002731BC /* LFRSACryptor.m */,
 				CA8A24C11D2660D6002731BC /* LFCCHexStringEncoding.h */,
 				CA8A24C21D2660D6002731BC /* LFCCHexStringEncoding.m */,
 				CA8A24C31D2660D6002731BC /* LFCommonCrypto.h */,
@@ -476,6 +525,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				CA8A25351D2E3456002731BC /* PBXTargetDependency */,
+				CA8A25331D2E2C3C002731BC /* PBXTargetDependency */,
 			);
 			name = LFUIKit;
 			productName = LFUIKit;
@@ -611,7 +662,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA8A24AC1D2610EE002731BC /* LFNSArrayUtils.m in Sources */,
 				CA8A24AF1D262096002731BC /* LFNSDictionaryUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -646,17 +696,25 @@
 			files = (
 				CA8A250E1D2B5262002731BC /* LFZipArchive.m in Sources */,
 				CA8A251B1D2B528B002731BC /* unzip.c in Sources */,
+				CA8A252E1D2E2992002731BC /* LFGIFImage.m in Sources */,
 				CA8A24CB1D2660D6002731BC /* LFCommonCryptor.m in Sources */,
 				CA8A24CD1D2660D6002731BC /* LFCommonHMAC.m in Sources */,
+				CA8A25251D2DF5AC002731BC /* LFGeometryUtils.m in Sources */,
 				CA8A24CA1D2660D6002731BC /* LFCCHexStringEncoding.m in Sources */,
-				CA8A251F1D2B60B6002731BC /* LFStringEncoding.m in Sources */,
+				CA8A251F1D2B60B6002731BC /* LFStringCoder.m in Sources */,
+				CA8A25471D2F9B29002731BC /* LFNSDataUtils.m in Sources */,
 				CA8A251A1D2B528B002731BC /* mztools.c in Sources */,
 				CA8A24D21D26714F002731BC /* LFContentSize.m in Sources */,
+				CA8A254A1D2F9ECA002731BC /* LFNSDateUtils.m in Sources */,
 				CA8A24E71D2A191A002731BC /* LFNSJSONSerializationUtils.m in Sources */,
 				CA8A25191D2B528B002731BC /* ioapi.c in Sources */,
+				CA8A25221D2BC884002731BC /* LFRSACryptor.m in Sources */,
 				CA8A251C1D2B528B002731BC /* zip.c in Sources */,
+				CA8A25441D2F8EC0002731BC /* LFNSBundleUtils.m in Sources */,
 				CA8A24CC1D2660D6002731BC /* LFCommonDigest.m in Sources */,
+				CA8A25311D2E2BE6002731BC /* LFWeakProxy.m in Sources */,
 				CA8A24E41D2A097C002731BC /* LFNSRegularExpressionUtils.m in Sources */,
+				CA8A25281D2E085C002731BC /* LFUIImageUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,6 +748,16 @@
 			isa = PBXTargetDependency;
 			target = CA8A24981D24EE95002731BC /* LFUIKit */;
 			targetProxy = CA8A24DD1D2A01C8002731BC /* PBXContainerItemProxy */;
+		};
+		CA8A25331D2E2C3C002731BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA8A24511D24BEB3002731BC /* LFCore */;
+			targetProxy = CA8A25321D2E2C3C002731BC /* PBXContainerItemProxy */;
+		};
+		CA8A25351D2E3456002731BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA8A24641D24BF37002731BC /* LFFoundation */;
+			targetProxy = CA8A25341D2E3456002731BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

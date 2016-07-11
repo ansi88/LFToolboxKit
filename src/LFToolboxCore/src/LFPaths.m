@@ -12,16 +12,6 @@
 #error "LFCore requires ARC support."
 #endif
 
-NSString* LFPathForBundleResource(NSBundle* bundle, NSString* relativePath) {
-    NSString* resourcePath = [(nil == bundle ? [NSBundle mainBundle] : bundle) resourcePath];
-    return [resourcePath stringByAppendingPathComponent:relativePath];
-}
-
-NSString* LFPathForBundleResourceOfType(NSBundle* bundle, NSString* relativePath, NSString* type){
-    NSString *resourcePath = [(nil == bundle ? [NSBundle mainBundle] : bundle) pathForResource:relativePath ofType:type];
-    return resourcePath;
-}
-
 NSString* LFPathForDocumentsResource(NSString* relativePath) {
     static NSString* documentsPath = nil;
     if (nil == documentsPath) {
