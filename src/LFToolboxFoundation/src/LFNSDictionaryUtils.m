@@ -43,7 +43,7 @@ static NSNumber *NSNumberFromID(id value) {
         if (!num) return def;                         \
         return num._type_;                            \
     }                                                 \
-return def;
+    return def;
 
 
 @implementation LFNSDictionaryUtils
@@ -59,7 +59,7 @@ return def;
     NSMutableArray *arr = [[NSMutableArray alloc] init];
     [sortedKeys enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [arr addObject:obj];
-    }]
+    }];
     return arr;
 
 }

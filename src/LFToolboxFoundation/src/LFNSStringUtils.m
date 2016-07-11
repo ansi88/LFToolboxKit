@@ -35,7 +35,7 @@
     CFUUIDRef uuid = CFUUIDCreate(NULL);
     CFStringRef string = CFUUIDCreateString(NULL, uuid);
     CFRelease(uuid);
-    return (__bridge_transfer NSString *)string);
+    return (__bridge_transfer NSString *)string;
 }
 
 + (NSString *)stringByTrim:(NSString *)string{
@@ -83,9 +83,22 @@
     if (string.length == 0 || [string hasSuffix:@"/"]) return 1;
     NSString *name = string.stringByDeletingPathExtension;
     __block CGFloat scale = 1;
-    [name lf_enumerateRegexMatches:@"@[0-9]+\\.?[0-9]*x$" usingBlock: ^(NSString *match, NSInteger index, NSRange matchRange, BOOL *stop) {
+    [self enumerateString:name regexMatches:@"@[0-9]+\\.?[0-9]*x$" usingBlock:^(NSString *match, NSInteger index, NSRange matchRange, BOOL *stop) {
         scale = [match substringWithRange:NSMakeRange(1, match.length - 2)].doubleValue;
     }];
     return scale;
 }
+
++ (void)enumerateString:(NSString *)string regexMatches:(NSString *)regex usingBlock:(void (^)(NSString *match, NSInteger index, NSRange matchRange, BOOL *stop))block {
+    NSRegularExpression *pattern = [NSRegularExpression regularExpressionWithPattern:regex options:NSRegularExpressionAnchorsMatchLines error:nil];
+    NSArray *matches = [pattern matchesInString:string options:0 range:NSMakeRange(0, string.length)];
+    
+    if (matches.count > 0) {
+        [matches enumerateObjectsUsingBlock: ^(NSTextCheckingResult *result, NSUInteger idx, BOOL *stop) {
+            block([string substringWithRange:result.range], idx, result.range, stop);
+        }];
+    }
+}
+
+
 @end

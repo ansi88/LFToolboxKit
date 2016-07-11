@@ -14,7 +14,6 @@
 		CA8A248E1D24C045002731BC /* LFMathTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A248D1D24C045002731BC /* LFMathTestCase.m */; };
 		CA8A24941D24CA89002731BC /* LFPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24931D24CA89002731BC /* LFPaths.m */; };
 		CA8A24A51D24EF26002731BC /* LFViewRecycler.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24A41D24EF26002731BC /* LFViewRecycler.m */; };
-		CA8A24AF1D262096002731BC /* LFNSDictionaryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24AE1D262096002731BC /* LFNSDictionaryUtils.m */; };
 		CA8A24B21D2651CF002731BC /* LFNSStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24B11D2651CF002731BC /* LFNSStringUtils.m */; };
 		CA8A24CA1D2660D6002731BC /* LFCCHexStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24C21D2660D6002731BC /* LFCCHexStringEncoding.m */; };
 		CA8A24CB1D2660D6002731BC /* LFCommonCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24C51D2660D6002731BC /* LFCommonCryptor.m */; };
@@ -148,8 +147,6 @@
 		CA8A24A71D24F008002731BC /* LFUIKitDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFUIKitDefines.h; sourceTree = "<group>"; };
 		CA8A24A81D24F017002731BC /* LFFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFFoundation.h; sourceTree = "<group>"; };
 		CA8A24A91D24F032002731BC /* LFFoundationDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFFoundationDefines.h; sourceTree = "<group>"; };
-		CA8A24AD1D262096002731BC /* LFNSDictionaryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSDictionaryUtils.h; sourceTree = "<group>"; };
-		CA8A24AE1D262096002731BC /* LFNSDictionaryUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSDictionaryUtils.m; sourceTree = "<group>"; };
 		CA8A24B01D2651CF002731BC /* LFNSStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSStringUtils.h; sourceTree = "<group>"; };
 		CA8A24B11D2651CF002731BC /* LFNSStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSStringUtils.m; sourceTree = "<group>"; };
 		CA8A24B71D266085002731BC /* libLFToolboxSecurity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLFToolboxSecurity.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -327,8 +324,6 @@
 				CA8A24A91D24F032002731BC /* LFFoundationDefines.h */,
 				CA8A250B1D2B5262002731BC /* LFZipArchive.h */,
 				CA8A250C1D2B5262002731BC /* LFZipArchive.m */,
-				CA8A24AD1D262096002731BC /* LFNSDictionaryUtils.h */,
-				CA8A24AE1D262096002731BC /* LFNSDictionaryUtils.m */,
 				CA8A24B01D2651CF002731BC /* LFNSStringUtils.h */,
 				CA8A24B11D2651CF002731BC /* LFNSStringUtils.m */,
 				CA8A24E21D2A097C002731BC /* LFNSRegularExpressionUtils.h */,
@@ -668,7 +663,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA8A24AF1D262096002731BC /* LFNSDictionaryUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
