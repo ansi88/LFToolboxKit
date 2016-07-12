@@ -17,5 +17,14 @@
 #import "LFUIAlertControllerUtils.h"
 #import "LFUIBarButtonItem+Add.h"
 #import "LFUIColor+Add.h"
+#import "LFUIBarButtonItemUtils.h"
+#import "LFUIButton+EnlargeEdge.h"
+#import "LFUIView+Add.h"
+#import "LFUIControl+Add.h"
+#import "LFUIDeviceUtils.h"
+#import "LFUIFont+Add.h"
+#import "LFUIGestureRecognizer+Add.h"
+#import "LFUINavigationController+Add.h"
+
 
 #endif /* LFUIKit_h */

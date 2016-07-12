@@ -13,7 +13,7 @@
 
 ///系统版本
 #ifndef kiOS7Later
-#define kiOS7Later [[UIDevice currentDevice].systemVersion floatValue] > 7.0
+#define kiOS7Later ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0)
 #endif
 
 #ifndef LF_SWAP

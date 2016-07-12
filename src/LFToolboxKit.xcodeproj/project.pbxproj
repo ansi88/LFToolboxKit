@@ -44,6 +44,14 @@
 		CAFC1E311D348B8A00DDB45D /* LFUIBarButtonItem+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E301D348B8A00DDB45D /* LFUIBarButtonItem+Add.m */; };
 		CAFC1E341D348F7900DDB45D /* LFUIBarButtonItemUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E331D348F7900DDB45D /* LFUIBarButtonItemUtils.m */; };
 		CAFC1E371D34932600DDB45D /* LFUIColor+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E361D34932600DDB45D /* LFUIColor+Add.m */; };
+		CAFC1E3A1D349E9400DDB45D /* LFUIView+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E391D349E9400DDB45D /* LFUIView+Add.m */; };
+		CAFC1E401D34A50900DDB45D /* LFUIButton+EnlargeEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E3F1D34A50900DDB45D /* LFUIButton+EnlargeEdge.m */; };
+		CAFC1E431D34BCC600DDB45D /* LFUIControl+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E421D34BCC600DDB45D /* LFUIControl+Add.m */; };
+		CAFC1E491D34C60600DDB45D /* LFUIDeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E481D34C60600DDB45D /* LFUIDeviceUtils.m */; };
+		CAFC1E4C1D34E57F00DDB45D /* LFUIFont+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E4B1D34E57F00DDB45D /* LFUIFont+Add.m */; };
+		CAFC1E4F1D34E89200DDB45D /* LFUIGestureRecognizer+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E4E1D34E89200DDB45D /* LFUIGestureRecognizer+Add.m */; };
+		CAFC1E521D34ED5A00DDB45D /* LFUINavigationController+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E511D34ED5A00DDB45D /* LFUINavigationController+Add.m */; };
+		CAFC1E551D34F07700DDB45D /* LFUIScrollViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E541D34F07700DDB45D /* LFUIScrollViewUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,6 +222,22 @@
 		CAFC1E331D348F7900DDB45D /* LFUIBarButtonItemUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIBarButtonItemUtils.m; sourceTree = "<group>"; };
 		CAFC1E351D34932600DDB45D /* LFUIColor+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFUIColor+Add.h"; sourceTree = "<group>"; };
 		CAFC1E361D34932600DDB45D /* LFUIColor+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFUIColor+Add.m"; sourceTree = "<group>"; };
+		CAFC1E381D349E9400DDB45D /* LFUIView+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFUIView+Add.h"; sourceTree = "<group>"; };
+		CAFC1E391D349E9400DDB45D /* LFUIView+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFUIView+Add.m"; sourceTree = "<group>"; };
+		CAFC1E3E1D34A50900DDB45D /* LFUIButton+EnlargeEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFUIButton+EnlargeEdge.h"; sourceTree = "<group>"; };
+		CAFC1E3F1D34A50900DDB45D /* LFUIButton+EnlargeEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFUIButton+EnlargeEdge.m"; sourceTree = "<group>"; };
+		CAFC1E411D34BCC600DDB45D /* LFUIControl+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFUIControl+Add.h"; sourceTree = "<group>"; };
+		CAFC1E421D34BCC600DDB45D /* LFUIControl+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFUIControl+Add.m"; sourceTree = "<group>"; };
+		CAFC1E471D34C60600DDB45D /* LFUIDeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUIDeviceUtils.h; sourceTree = "<group>"; };
+		CAFC1E481D34C60600DDB45D /* LFUIDeviceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIDeviceUtils.m; sourceTree = "<group>"; };
+		CAFC1E4A1D34E57F00DDB45D /* LFUIFont+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFUIFont+Add.h"; sourceTree = "<group>"; };
+		CAFC1E4B1D34E57F00DDB45D /* LFUIFont+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFUIFont+Add.m"; sourceTree = "<group>"; };
+		CAFC1E4D1D34E89200DDB45D /* LFUIGestureRecognizer+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFUIGestureRecognizer+Add.h"; sourceTree = "<group>"; };
+		CAFC1E4E1D34E89200DDB45D /* LFUIGestureRecognizer+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFUIGestureRecognizer+Add.m"; sourceTree = "<group>"; };
+		CAFC1E501D34ED5A00DDB45D /* LFUINavigationController+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFUINavigationController+Add.h"; sourceTree = "<group>"; };
+		CAFC1E511D34ED5A00DDB45D /* LFUINavigationController+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFUINavigationController+Add.m"; sourceTree = "<group>"; };
+		CAFC1E531D34F07700DDB45D /* LFUIScrollViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUIScrollViewUtils.h; sourceTree = "<group>"; };
+		CAFC1E541D34F07700DDB45D /* LFUIScrollViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIScrollViewUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -408,8 +432,24 @@
 				CAFC1E301D348B8A00DDB45D /* LFUIBarButtonItem+Add.m */,
 				CAFC1E321D348F7900DDB45D /* LFUIBarButtonItemUtils.h */,
 				CAFC1E331D348F7900DDB45D /* LFUIBarButtonItemUtils.m */,
+				CAFC1E3E1D34A50900DDB45D /* LFUIButton+EnlargeEdge.h */,
+				CAFC1E3F1D34A50900DDB45D /* LFUIButton+EnlargeEdge.m */,
 				CAFC1E351D34932600DDB45D /* LFUIColor+Add.h */,
 				CAFC1E361D34932600DDB45D /* LFUIColor+Add.m */,
+				CAFC1E381D349E9400DDB45D /* LFUIView+Add.h */,
+				CAFC1E391D349E9400DDB45D /* LFUIView+Add.m */,
+				CAFC1E411D34BCC600DDB45D /* LFUIControl+Add.h */,
+				CAFC1E421D34BCC600DDB45D /* LFUIControl+Add.m */,
+				CAFC1E471D34C60600DDB45D /* LFUIDeviceUtils.h */,
+				CAFC1E481D34C60600DDB45D /* LFUIDeviceUtils.m */,
+				CAFC1E4A1D34E57F00DDB45D /* LFUIFont+Add.h */,
+				CAFC1E4B1D34E57F00DDB45D /* LFUIFont+Add.m */,
+				CAFC1E4D1D34E89200DDB45D /* LFUIGestureRecognizer+Add.h */,
+				CAFC1E4E1D34E89200DDB45D /* LFUIGestureRecognizer+Add.m */,
+				CAFC1E501D34ED5A00DDB45D /* LFUINavigationController+Add.h */,
+				CAFC1E511D34ED5A00DDB45D /* LFUINavigationController+Add.m */,
+				CAFC1E531D34F07700DDB45D /* LFUIScrollViewUtils.h */,
+				CAFC1E541D34F07700DDB45D /* LFUIScrollViewUtils.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -677,15 +717,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAFC1E3A1D349E9400DDB45D /* LFUIView+Add.m in Sources */,
+				CAFC1E521D34ED5A00DDB45D /* LFUINavigationController+Add.m in Sources */,
 				CACCB5591D334F22004AEA7A /* LFNSNotificationCenterUtils.m in Sources */,
 				CACCB55C1D3398B2004AEA7A /* LFNSDictionaryUtils.m in Sources */,
 				CACCB55F1D33A4D0004AEA7A /* LFUIAlertControllerUtils.m in Sources */,
 				CAFC1E311D348B8A00DDB45D /* LFUIBarButtonItem+Add.m in Sources */,
+				CAFC1E431D34BCC600DDB45D /* LFUIControl+Add.m in Sources */,
 				CAFC1E371D34932600DDB45D /* LFUIColor+Add.m in Sources */,
 				CAFC1E341D348F7900DDB45D /* LFUIBarButtonItemUtils.m in Sources */,
 				CA8A24941D24CA89002731BC /* LFPaths.m in Sources */,
+				CAFC1E401D34A50900DDB45D /* LFUIButton+EnlargeEdge.m in Sources */,
+				CAFC1E551D34F07700DDB45D /* LFUIScrollViewUtils.m in Sources */,
+				CAFC1E4C1D34E57F00DDB45D /* LFUIFont+Add.m in Sources */,
+				CAFC1E4F1D34E89200DDB45D /* LFUIGestureRecognizer+Add.m in Sources */,
 				CA8A24601D24BF0E002731BC /* LFMath.m in Sources */,
 				CA8A24B21D2651CF002731BC /* LFNSStringUtils.m in Sources */,
+				CAFC1E491D34C60600DDB45D /* LFUIDeviceUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
