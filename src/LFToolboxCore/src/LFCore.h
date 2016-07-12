@@ -9,8 +9,8 @@
 #ifndef LFCore_h
 #define LFCore_h
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-
+#import "LFMath.h"
+#import "LFPaths.h"
+#import "LFWeakProxy.h"
 
 #endif /* LFCoreDefines_h */

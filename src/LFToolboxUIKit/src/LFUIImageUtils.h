@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LFUIKit.h"
+#import <UIKit/UIKit.h>
 
 #pragma mark - Helper functions
 

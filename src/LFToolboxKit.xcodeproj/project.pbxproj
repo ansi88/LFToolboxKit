@@ -40,6 +40,10 @@
 		CA8A254A1D2F9ECA002731BC /* LFNSDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25491D2F9ECA002731BC /* LFNSDateUtils.m */; };
 		CACCB5591D334F22004AEA7A /* LFNSNotificationCenterUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CACCB5581D334F22004AEA7A /* LFNSNotificationCenterUtils.m */; };
 		CACCB55C1D3398B2004AEA7A /* LFNSDictionaryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CACCB55B1D3398B2004AEA7A /* LFNSDictionaryUtils.m */; };
+		CACCB55F1D33A4D0004AEA7A /* LFUIAlertControllerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CACCB55E1D33A4D0004AEA7A /* LFUIAlertControllerUtils.m */; };
+		CAFC1E311D348B8A00DDB45D /* LFUIBarButtonItem+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E301D348B8A00DDB45D /* LFUIBarButtonItem+Add.m */; };
+		CAFC1E341D348F7900DDB45D /* LFUIBarButtonItemUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E331D348F7900DDB45D /* LFUIBarButtonItemUtils.m */; };
+		CAFC1E371D34932600DDB45D /* LFUIColor+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E361D34932600DDB45D /* LFUIColor+Add.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +206,14 @@
 		CACCB5581D334F22004AEA7A /* LFNSNotificationCenterUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSNotificationCenterUtils.m; sourceTree = "<group>"; };
 		CACCB55A1D3398B2004AEA7A /* LFNSDictionaryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSDictionaryUtils.h; sourceTree = "<group>"; };
 		CACCB55B1D3398B2004AEA7A /* LFNSDictionaryUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSDictionaryUtils.m; sourceTree = "<group>"; };
+		CACCB55D1D33A4D0004AEA7A /* LFUIAlertControllerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUIAlertControllerUtils.h; sourceTree = "<group>"; };
+		CACCB55E1D33A4D0004AEA7A /* LFUIAlertControllerUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIAlertControllerUtils.m; sourceTree = "<group>"; };
+		CAFC1E2F1D348B8A00DDB45D /* LFUIBarButtonItem+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFUIBarButtonItem+Add.h"; sourceTree = "<group>"; };
+		CAFC1E301D348B8A00DDB45D /* LFUIBarButtonItem+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFUIBarButtonItem+Add.m"; sourceTree = "<group>"; };
+		CAFC1E321D348F7900DDB45D /* LFUIBarButtonItemUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUIBarButtonItemUtils.h; sourceTree = "<group>"; };
+		CAFC1E331D348F7900DDB45D /* LFUIBarButtonItemUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIBarButtonItemUtils.m; sourceTree = "<group>"; };
+		CAFC1E351D34932600DDB45D /* LFUIColor+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFUIColor+Add.h"; sourceTree = "<group>"; };
+		CAFC1E361D34932600DDB45D /* LFUIColor+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFUIColor+Add.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,6 +402,14 @@
 				CA8A25271D2E085C002731BC /* LFUIImageUtils.m */,
 				CA8A252B1D2E2992002731BC /* LFGIFImage.h */,
 				CA8A252C1D2E2992002731BC /* LFGIFImage.m */,
+				CACCB55D1D33A4D0004AEA7A /* LFUIAlertControllerUtils.h */,
+				CACCB55E1D33A4D0004AEA7A /* LFUIAlertControllerUtils.m */,
+				CAFC1E2F1D348B8A00DDB45D /* LFUIBarButtonItem+Add.h */,
+				CAFC1E301D348B8A00DDB45D /* LFUIBarButtonItem+Add.m */,
+				CAFC1E321D348F7900DDB45D /* LFUIBarButtonItemUtils.h */,
+				CAFC1E331D348F7900DDB45D /* LFUIBarButtonItemUtils.m */,
+				CAFC1E351D34932600DDB45D /* LFUIColor+Add.h */,
+				CAFC1E361D34932600DDB45D /* LFUIColor+Add.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -659,6 +679,10 @@
 			files = (
 				CACCB5591D334F22004AEA7A /* LFNSNotificationCenterUtils.m in Sources */,
 				CACCB55C1D3398B2004AEA7A /* LFNSDictionaryUtils.m in Sources */,
+				CACCB55F1D33A4D0004AEA7A /* LFUIAlertControllerUtils.m in Sources */,
+				CAFC1E311D348B8A00DDB45D /* LFUIBarButtonItem+Add.m in Sources */,
+				CAFC1E371D34932600DDB45D /* LFUIColor+Add.m in Sources */,
+				CAFC1E341D348F7900DDB45D /* LFUIBarButtonItemUtils.m in Sources */,
 				CA8A24941D24CA89002731BC /* LFPaths.m in Sources */,
 				CA8A24601D24BF0E002731BC /* LFMath.m in Sources */,
 				CA8A24B21D2651CF002731BC /* LFNSStringUtils.m in Sources */,

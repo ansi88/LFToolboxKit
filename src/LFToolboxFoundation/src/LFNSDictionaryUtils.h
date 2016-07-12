@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFFoundation.h"
+#import <Foundation/Foundation.h>
 
 @interface LFNSDictionaryUtils : NSObject
 

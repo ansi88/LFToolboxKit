@@ -8,7 +8,6 @@
 
 #import "LFContentSize.h"
 #import "LFUIKitDefines.h"
-#import <UIKit/UIKit.h>
 
 @implementation LFContentSize
 

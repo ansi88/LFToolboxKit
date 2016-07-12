@@ -6,7 +6,8 @@
 //  Copyright © 2016年 live Interactive. All rights reserved.
 //
 
-#import "LFCore.h"
+#import <UIKit/UIKit.h>
+
 
 @interface LFMath : NSObject
 

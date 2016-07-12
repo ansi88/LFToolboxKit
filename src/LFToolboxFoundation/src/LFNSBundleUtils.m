@@ -8,8 +8,8 @@
 //
 
 #import "LFNSBundleUtils.h"
+#import <UIKit/UIKit.h>
 #import "LFNSStringUtils.h"
-#import "LFFoundation.h"
 
 #define SUPPORT_SCALES @[@3, @2, @1]
 @implementation LFNSBundleUtils

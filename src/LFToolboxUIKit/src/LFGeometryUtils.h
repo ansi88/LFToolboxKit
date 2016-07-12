@@ -7,7 +7,7 @@
 //
 
 #import <CoreGraphics/CoreGraphics.h>
-#import "LFUIKit.h"
+#import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSUInteger, LFScaling) {
     LFScaleProportionally = 0,   // Fit proportionally

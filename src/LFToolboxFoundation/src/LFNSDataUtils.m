@@ -7,7 +7,7 @@
 //
 
 #import "LFNSDataUtils.h"
-#import "LFFoundation.h"
+
 
 @implementation LFNSDataUtils
 

@@ -9,7 +9,7 @@
 #ifndef LFUIKitDefines_h
 #define LFUIKitDefines_h
 
-#import "LFUIKit.h"
+#import <UIKit/UIKit.h>
 
 ///系统版本
 #ifndef kiOS7Later

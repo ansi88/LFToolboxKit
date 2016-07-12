@@ -7,7 +7,7 @@
  @version	1.0 2016-06-30 14:46:33 Creation
  */
 
-#import "LFUIKit.h"
+#import <UIKit/UIKit.h>
 
 /**
  * For recycling views in scroll views.
