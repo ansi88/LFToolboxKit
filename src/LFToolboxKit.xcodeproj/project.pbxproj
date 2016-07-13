@@ -52,9 +52,19 @@
 		CAFC1E4F1D34E89200DDB45D /* LFUIGestureRecognizer+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E4E1D34E89200DDB45D /* LFUIGestureRecognizer+Add.m */; };
 		CAFC1E521D34ED5A00DDB45D /* LFUINavigationController+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E511D34ED5A00DDB45D /* LFUINavigationController+Add.m */; };
 		CAFC1E551D34F07700DDB45D /* LFUIScrollViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E541D34F07700DDB45D /* LFUIScrollViewUtils.m */; };
-		E6DF9DFB1D362C5300A66050 /* LFContentSizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DF9DFA1D362C5300A66050 /* LFContentSizeTests.m */; };
+		E6B7FC841D3642AE00DBB108 /* LFUIDeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E481D34C60600DDB45D /* LFUIDeviceUtils.m */; };
+		E6B7FC851D36432000DBB108 /* LFNSStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24B11D2651CF002731BC /* LFNSStringUtils.m */; };
+		E6B7FC881D3643E800DBB108 /* libLFFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8A24651D24BF37002731BC /* libLFFoundation.a */; };
+		E6B7FC8A1D3643F600DBB108 /* libLFToolboxSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8A24B71D266085002731BC /* libLFToolboxSecurity.a */; };
+		E6B7FC8B1D3643FC00DBB108 /* libLFCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8A24521D24BEB3002731BC /* libLFCore.a */; };
+		E6B7FC921D36455400DBB108 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6B7FC8D1D36455400DBB108 /* Info.plist */; };
+		E6B7FC931D36455400DBB108 /* LFContentSizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B7FC8E1D36455400DBB108 /* LFContentSizeTests.m */; };
+		E6B7FC941D36455400DBB108 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6B7FC901D36455400DBB108 /* Info.plist */; };
+		E6B7FC951D36455400DBB108 /* LFUIDeviceUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B7FC911D36455400DBB108 /* LFUIDeviceUtilsTests.m */; };
+		E6B7FC961D36463300DBB108 /* LFUIDeviceUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B7FC911D36455400DBB108 /* LFUIDeviceUtilsTests.m */; };
+		E6B7FC971D36464400DBB108 /* LFContentSizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B7FC8E1D36455400DBB108 /* LFContentSizeTests.m */; };
 		E6DF9DFD1D362C5300A66050 /* libLFUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8A24991D24EE95002731BC /* libLFUIKit.a */; };
-		E6DF9E041D362CB400A66050 /* LFContentSize.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24D11D26714F002731BC /* LFContentSize.m */; };
+		E6DF9E0E1D362FD900A66050 /* libLFUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8A24991D24EE95002731BC /* libLFUIKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,7 +110,21 @@
 			remoteGlobalIDString = CA8A24641D24BF37002731BC;
 			remoteInfo = LFFoundation;
 		};
+		E6B7FC861D36432700DBB108 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA8A24391D24BDB7002731BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA8A24B61D266085002731BC;
+			remoteInfo = LFToolboxSecurity;
+		};
 		E6DF9DFE1D362C5300A66050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA8A24391D24BDB7002731BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA8A24981D24EE95002731BC;
+			remoteInfo = LFUIKit;
+		};
+		E6DF9E0F1D362FD900A66050 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CA8A24391D24BDB7002731BC /* Project object */;
 			proxyType = 1;
@@ -248,9 +272,13 @@
 		CAFC1E511D34ED5A00DDB45D /* LFUINavigationController+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFUINavigationController+Add.m"; sourceTree = "<group>"; };
 		CAFC1E531D34F07700DDB45D /* LFUIScrollViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUIScrollViewUtils.h; sourceTree = "<group>"; };
 		CAFC1E541D34F07700DDB45D /* LFUIScrollViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIScrollViewUtils.m; sourceTree = "<group>"; };
+		E6B7FC7D1D36348E00DBB108 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E6B7FC8D1D36455400DBB108 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6B7FC8E1D36455400DBB108 /* LFContentSizeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFContentSizeTests.m; sourceTree = "<group>"; };
+		E6B7FC901D36455400DBB108 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6B7FC911D36455400DBB108 /* LFUIDeviceUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIDeviceUtilsTests.m; sourceTree = "<group>"; };
 		E6DF9DF81D362C5300A66050 /* LFContentSizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFContentSizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6DF9DFA1D362C5300A66050 /* LFContentSizeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFContentSizeTests.m; sourceTree = "<group>"; };
-		E6DF9DFC1D362C5300A66050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6DF9E091D362FD900A66050 /* LFUIDeviceUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFUIDeviceUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +316,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B7FC8B1D3643FC00DBB108 /* libLFCore.a in Frameworks */,
+				E6B7FC8A1D3643F600DBB108 /* libLFToolboxSecurity.a in Frameworks */,
+				E6B7FC881D3643E800DBB108 /* libLFFoundation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,12 +345,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6DF9E061D362FD900A66050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6DF9E0E1D362FD900A66050 /* libLFUIKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		CA8A24381D24BDB7002731BC = {
 			isa = PBXGroup;
 			children = (
+				E6B7FC7D1D36348E00DBB108 /* AVFoundation.framework */,
 				CA8A24531D24BEB3002731BC /* LFToolboxCore */,
 				CA8A24661D24BF37002731BC /* LFToolboxFoundation */,
 				CA8A249A1D24EE95002731BC /* LFToolboxUIKit */,
@@ -342,6 +382,7 @@
 				CA8A24B71D266085002731BC /* libLFToolboxSecurity.a */,
 				CA8A24D71D2A01C8002731BC /* LFToolboxUIKitTests.xctest */,
 				E6DF9DF81D362C5300A66050 /* LFContentSizeTests.xctest */,
+				E6DF9E091D362FD900A66050 /* LFUIDeviceUtilsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -505,9 +546,10 @@
 		CA8A24D81D2A01C8002731BC /* LFToolboxUIKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				E6DF9DF91D362C5300A66050 /* LFContentSizeTests */,
 				CA8A24D91D2A01C8002731BC /* LFToolboxUIKitTests.m */,
 				CA8A24DB1D2A01C8002731BC /* Info.plist */,
+				E6B7FC8C1D36455400DBB108 /* LFContentSizeTests */,
+				E6B7FC8F1D36455400DBB108 /* LFUIDeviceUtilsTests */,
 			);
 			path = LFToolboxUIKitTests;
 			sourceTree = "<group>";
@@ -528,14 +570,22 @@
 			path = minizip;
 			sourceTree = "<group>";
 		};
-		E6DF9DF91D362C5300A66050 /* LFContentSizeTests */ = {
+		E6B7FC8C1D36455400DBB108 /* LFContentSizeTests */ = {
 			isa = PBXGroup;
 			children = (
-				E6DF9DFA1D362C5300A66050 /* LFContentSizeTests.m */,
-				E6DF9DFC1D362C5300A66050 /* Info.plist */,
+				E6B7FC8D1D36455400DBB108 /* Info.plist */,
+				E6B7FC8E1D36455400DBB108 /* LFContentSizeTests.m */,
 			);
-			name = LFContentSizeTests;
-			path = ../LFContentSizeTests;
+			path = LFContentSizeTests;
+			sourceTree = "<group>";
+		};
+		E6B7FC8F1D36455400DBB108 /* LFUIDeviceUtilsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6B7FC901D36455400DBB108 /* Info.plist */,
+				E6B7FC911D36455400DBB108 /* LFUIDeviceUtilsTests.m */,
+			);
+			path = LFUIDeviceUtilsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -623,6 +673,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E6B7FC871D36432700DBB108 /* PBXTargetDependency */,
 				CA8A25351D2E3456002731BC /* PBXTargetDependency */,
 				CA8A25331D2E2C3C002731BC /* PBXTargetDependency */,
 			);
@@ -684,6 +735,24 @@
 			productReference = E6DF9DF81D362C5300A66050 /* LFContentSizeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E6DF9E081D362FD900A66050 /* LFUIDeviceUtilsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6DF9E111D362FD900A66050 /* Build configuration list for PBXNativeTarget "LFUIDeviceUtilsTests" */;
+			buildPhases = (
+				E6DF9E051D362FD900A66050 /* Sources */,
+				E6DF9E061D362FD900A66050 /* Frameworks */,
+				E6DF9E071D362FD900A66050 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6DF9E101D362FD900A66050 /* PBXTargetDependency */,
+			);
+			name = LFUIDeviceUtilsTests;
+			productName = LFUIDeviceUtilsTests;
+			productReference = E6DF9E091D362FD900A66050 /* LFUIDeviceUtilsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -717,6 +786,9 @@
 					E6DF9DF71D362C5300A66050 = {
 						CreatedOnToolsVersion = 7.3;
 					};
+					E6DF9E081D362FD900A66050 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 				};
 			};
 			buildConfigurationList = CA8A243C1D24BDB7002731BC /* Build configuration list for PBXProject "LFToolboxKit" */;
@@ -739,6 +811,7 @@
 				CA8A24811D24C01D002731BC /* LFFoundationTests */,
 				CA8A24D61D2A01C8002731BC /* LFToolboxUIKitTests */,
 				E6DF9DF71D362C5300A66050 /* LFContentSizeTests */,
+				E6DF9E081D362FD900A66050 /* LFUIDeviceUtilsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -762,10 +835,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B7FC941D36455400DBB108 /* Info.plist in Resources */,
+				E6B7FC921D36455400DBB108 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E6DF9DF61D362C5300A66050 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6DF9E071D362FD900A66050 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -803,6 +885,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B7FC851D36432000DBB108 /* LFNSStringUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -826,6 +909,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B7FC841D3642AE00DBB108 /* LFUIDeviceUtils.m in Sources */,
 				CA8A24A51D24EF26002731BC /* LFViewRecycler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -862,6 +946,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B7FC951D36455400DBB108 /* LFUIDeviceUtilsTests.m in Sources */,
+				E6B7FC931D36455400DBB108 /* LFContentSizeTests.m in Sources */,
 				CA8A24DA1D2A01C8002731BC /* LFToolboxUIKitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -870,8 +956,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6DF9E041D362CB400A66050 /* LFContentSize.m in Sources */,
-				E6DF9DFB1D362C5300A66050 /* LFContentSizeTests.m in Sources */,
+				E6B7FC971D36464400DBB108 /* LFContentSizeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6DF9E051D362FD900A66050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B7FC961D36463300DBB108 /* LFUIDeviceUtilsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -908,10 +1001,20 @@
 			target = CA8A24641D24BF37002731BC /* LFFoundation */;
 			targetProxy = CA8A25341D2E3456002731BC /* PBXContainerItemProxy */;
 		};
+		E6B7FC871D36432700DBB108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA8A24B61D266085002731BC /* LFToolboxSecurity */;
+			targetProxy = E6B7FC861D36432700DBB108 /* PBXContainerItemProxy */;
+		};
 		E6DF9DFF1D362C5300A66050 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CA8A24981D24EE95002731BC /* LFUIKit */;
 			targetProxy = E6DF9DFE1D362C5300A66050 /* PBXContainerItemProxy */;
+		};
+		E6DF9E101D362FD900A66050 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA8A24981D24EE95002731BC /* LFUIKit */;
+			targetProxy = E6DF9E0F1D362FD900A66050 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1133,7 +1236,7 @@
 		E6DF9E011D362C5300A66050 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = LFContentSizeTests/Info.plist;
+				INFOPLIST_FILE = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tangjiangwen.LFContentSizeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1143,9 +1246,29 @@
 		E6DF9E021D362C5300A66050 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = LFContentSizeTests/Info.plist;
+				INFOPLIST_FILE = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tangjiangwen.LFContentSizeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E6DF9E121D362FD900A66050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tangjiangwen.LFUIDeviceUtilsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E6DF9E131D362FD900A66050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tangjiangwen.LFUIDeviceUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1232,6 +1355,16 @@
 				E6DF9E021D362C5300A66050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6DF9E111D362FD900A66050 /* Build configuration list for PBXNativeTarget "LFUIDeviceUtilsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6DF9E121D362FD900A66050 /* Debug */,
+				E6DF9E131D362FD900A66050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
