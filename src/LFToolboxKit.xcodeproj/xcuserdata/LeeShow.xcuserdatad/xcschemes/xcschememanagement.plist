@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>LFCore.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>LFFoundation.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>LFToolboxSecurity.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>LFUIKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CA8A24511D24BEB3002731BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA8A24641D24BF37002731BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA8A24721D24BFBA002731BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA8A24811D24C01D002731BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA8A24981D24EE95002731BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA8A24B61D266085002731BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA8A24D61D2A01C8002731BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
