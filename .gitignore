@@ -2,3 +2,8 @@
 #CocoaPods
 Pods/
 Podfile.lock
+src/LFToolboxKit.xcodeproj/project.xcworkspace/xcuserdata/guoliyuan.xcuserdatad/UserInterfaceState.xcuserstate
+src/LFToolboxKit.xcodeproj/xcuserdata/guoliyuan.xcuserdatad/xcschemes/LFCore.xcscheme
+src/LFToolboxKit.xcodeproj/xcuserdata/guoliyuan.xcuserdatad/xcschemes/LFFoundation.xcscheme
+src/LFToolboxKit.xcodeproj/xcuserdata/guoliyuan.xcuserdatad/xcschemes/LFUIKit.xcscheme
+src/LFToolboxKit.xcodeproj/xcuserdata/guoliyuan.xcuserdatad/xcschemes/xcschememanagement.plist
