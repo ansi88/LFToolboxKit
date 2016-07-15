@@ -14,7 +14,7 @@
 
 
 
-@implementation LFUIDeviceUtils
+@implementation LFUIDeviceUtility
 
 + (BOOL)isPad{
     

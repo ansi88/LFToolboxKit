@@ -6,7 +6,7 @@
 //  Copyright © 2016年 live Interactive. All rights reserved.
 //
 
-#import "LFGeometryUtils.h"
+#import "LFGeometryUtility.h"
 
 CGRect LFCGAlignRectangles(CGRect alignee, CGRect aligner, LFRectAlignment alignment) {
     switch (alignment) {
