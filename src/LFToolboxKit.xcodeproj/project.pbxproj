@@ -14,7 +14,7 @@
 		CA8A248E1D24C045002731BC /* LFMathTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A248D1D24C045002731BC /* LFMathTestCase.m */; };
 		CA8A24941D24CA89002731BC /* LFPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24931D24CA89002731BC /* LFPaths.m */; };
 		CA8A24A51D24EF26002731BC /* LFViewRecycler.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24A41D24EF26002731BC /* LFViewRecycler.m */; };
-		CA8A24B21D2651CF002731BC /* LFNSStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24B11D2651CF002731BC /* LFNSStringUtils.m */; };
+		CA8A24B21D2651CF002731BC /* LFNSStringUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24B11D2651CF002731BC /* LFNSStringUtility.m */; };
 		CA8A24CA1D2660D6002731BC /* LFCCHexStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24C21D2660D6002731BC /* LFCCHexStringEncoding.m */; };
 		CA8A24CB1D2660D6002731BC /* LFCommonCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24C51D2660D6002731BC /* LFCommonCryptor.m */; };
 		CA8A24CC1D2660D6002731BC /* LFCommonDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24C71D2660D6002731BC /* LFCommonDigest.m */; };
@@ -22,8 +22,8 @@
 		CA8A24D21D26714F002731BC /* LFContentSize.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24D11D26714F002731BC /* LFContentSize.m */; };
 		CA8A24DA1D2A01C8002731BC /* LFToolboxUIKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24D91D2A01C8002731BC /* LFToolboxUIKitTests.m */; };
 		CA8A24DC1D2A01C8002731BC /* libLFUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8A24991D24EE95002731BC /* libLFUIKit.a */; };
-		CA8A24E41D2A097C002731BC /* LFNSRegularExpressionUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24E31D2A097C002731BC /* LFNSRegularExpressionUtils.m */; };
-		CA8A24E71D2A191A002731BC /* LFNSJSONSerializationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24E61D2A191A002731BC /* LFNSJSONSerializationUtils.m */; };
+		CA8A24E41D2A097C002731BC /* LFNSRegularExpressionUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24E31D2A097C002731BC /* LFNSRegularExpressionUtility.m */; };
+		CA8A24E71D2A191A002731BC /* LFNSJSONSerializationUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24E61D2A191A002731BC /* LFNSJSONSerializationUtility.m */; };
 		CA8A250E1D2B5262002731BC /* LFZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A250C1D2B5262002731BC /* LFZipArchive.m */; };
 		CA8A25191D2B528B002731BC /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25111D2B528B002731BC /* ioapi.c */; };
 		CA8A251A1D2B528B002731BC /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25131D2B528B002731BC /* mztools.c */; };
@@ -31,29 +31,29 @@
 		CA8A251C1D2B528B002731BC /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25171D2B528B002731BC /* zip.c */; };
 		CA8A251F1D2B60B6002731BC /* LFStringCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A251E1D2B60B6002731BC /* LFStringCoder.m */; };
 		CA8A25221D2BC884002731BC /* LFRSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25211D2BC884002731BC /* LFRSACryptor.m */; };
-		CA8A25251D2DF5AC002731BC /* LFGeometryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25241D2DF5AC002731BC /* LFGeometryUtils.m */; };
-		CA8A25281D2E085C002731BC /* LFUIImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25271D2E085C002731BC /* LFUIImageUtils.m */; };
+		CA8A25251D2DF5AC002731BC /* LFGeometryUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25241D2DF5AC002731BC /* LFGeometryUtility.m */; };
+		CA8A25281D2E085C002731BC /* LFUIImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25271D2E085C002731BC /* LFUIImageUtility.m */; };
 		CA8A252E1D2E2992002731BC /* LFGIFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A252C1D2E2992002731BC /* LFGIFImage.m */; };
 		CA8A25311D2E2BE6002731BC /* LFWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25301D2E2BE6002731BC /* LFWeakProxy.m */; };
-		CA8A25441D2F8EC0002731BC /* LFNSBundleUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25431D2F8EC0002731BC /* LFNSBundleUtils.m */; };
-		CA8A25471D2F9B29002731BC /* LFNSDataUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25461D2F9B29002731BC /* LFNSDataUtils.m */; };
-		CA8A254A1D2F9ECA002731BC /* LFNSDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25491D2F9ECA002731BC /* LFNSDateUtils.m */; };
-		CACCB5591D334F22004AEA7A /* LFNSNotificationCenterUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CACCB5581D334F22004AEA7A /* LFNSNotificationCenterUtils.m */; };
-		CACCB55C1D3398B2004AEA7A /* LFNSDictionaryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CACCB55B1D3398B2004AEA7A /* LFNSDictionaryUtils.m */; };
-		CACCB55F1D33A4D0004AEA7A /* LFUIAlertControllerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CACCB55E1D33A4D0004AEA7A /* LFUIAlertControllerUtils.m */; };
+		CA8A25441D2F8EC0002731BC /* LFNSBundleUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25431D2F8EC0002731BC /* LFNSBundleUtility.m */; };
+		CA8A25471D2F9B29002731BC /* LFNSDataUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25461D2F9B29002731BC /* LFNSDataUtility.m */; };
+		CA8A254A1D2F9ECA002731BC /* LFNSDateUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25491D2F9ECA002731BC /* LFNSDateUtility.m */; };
+		CACCB5591D334F22004AEA7A /* LFNSNotificationCenterUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CACCB5581D334F22004AEA7A /* LFNSNotificationCenterUtility.m */; };
+		CACCB55C1D3398B2004AEA7A /* LFNSDictionaryUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CACCB55B1D3398B2004AEA7A /* LFNSDictionaryUtility.m */; };
+		CACCB55F1D33A4D0004AEA7A /* LFUIAlertControllerUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CACCB55E1D33A4D0004AEA7A /* LFUIAlertControllerUtility.m */; };
 		CAFC1E311D348B8A00DDB45D /* LFUIBarButtonItem+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E301D348B8A00DDB45D /* LFUIBarButtonItem+Add.m */; };
-		CAFC1E341D348F7900DDB45D /* LFUIBarButtonItemUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E331D348F7900DDB45D /* LFUIBarButtonItemUtils.m */; };
+		CAFC1E341D348F7900DDB45D /* LFUIBarButtonItemUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E331D348F7900DDB45D /* LFUIBarButtonItemUtility.m */; };
 		CAFC1E371D34932600DDB45D /* LFUIColor+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E361D34932600DDB45D /* LFUIColor+Add.m */; };
 		CAFC1E3A1D349E9400DDB45D /* LFUIView+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E391D349E9400DDB45D /* LFUIView+Add.m */; };
 		CAFC1E401D34A50900DDB45D /* LFUIButton+EnlargeEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E3F1D34A50900DDB45D /* LFUIButton+EnlargeEdge.m */; };
 		CAFC1E431D34BCC600DDB45D /* LFUIControl+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E421D34BCC600DDB45D /* LFUIControl+Add.m */; };
-		CAFC1E491D34C60600DDB45D /* LFUIDeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E481D34C60600DDB45D /* LFUIDeviceUtils.m */; };
+		CAFC1E491D34C60600DDB45D /* LFUIDeviceUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E481D34C60600DDB45D /* LFUIDeviceUtility.m */; };
 		CAFC1E4C1D34E57F00DDB45D /* LFUIFont+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E4B1D34E57F00DDB45D /* LFUIFont+Add.m */; };
 		CAFC1E4F1D34E89200DDB45D /* LFUIGestureRecognizer+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E4E1D34E89200DDB45D /* LFUIGestureRecognizer+Add.m */; };
 		CAFC1E521D34ED5A00DDB45D /* LFUINavigationController+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E511D34ED5A00DDB45D /* LFUINavigationController+Add.m */; };
-		CAFC1E551D34F07700DDB45D /* LFUIScrollViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E541D34F07700DDB45D /* LFUIScrollViewUtils.m */; };
-		E6B7FC841D3642AE00DBB108 /* LFUIDeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E481D34C60600DDB45D /* LFUIDeviceUtils.m */; };
-		E6B7FC851D36432000DBB108 /* LFNSStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24B11D2651CF002731BC /* LFNSStringUtils.m */; };
+		CAFC1E551D34F07700DDB45D /* LFUIScrollViewUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E541D34F07700DDB45D /* LFUIScrollViewUtility.m */; };
+		E6B7FC841D3642AE00DBB108 /* LFUIDeviceUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFC1E481D34C60600DDB45D /* LFUIDeviceUtility.m */; };
+		E6B7FC851D36432000DBB108 /* LFNSStringUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A24B11D2651CF002731BC /* LFNSStringUtility.m */; };
 		E6B7FC881D3643E800DBB108 /* libLFFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8A24651D24BF37002731BC /* libLFFoundation.a */; };
 		E6B7FC8A1D3643F600DBB108 /* libLFToolboxSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8A24B71D266085002731BC /* libLFToolboxSecurity.a */; };
 		E6B7FC8B1D3643FC00DBB108 /* libLFCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8A24521D24BEB3002731BC /* libLFCore.a */; };
@@ -194,8 +194,8 @@
 		CA8A24A71D24F008002731BC /* LFUIKitDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFUIKitDefines.h; sourceTree = "<group>"; };
 		CA8A24A81D24F017002731BC /* LFFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFFoundation.h; sourceTree = "<group>"; };
 		CA8A24A91D24F032002731BC /* LFFoundationDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFFoundationDefines.h; sourceTree = "<group>"; };
-		CA8A24B01D2651CF002731BC /* LFNSStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSStringUtils.h; sourceTree = "<group>"; };
-		CA8A24B11D2651CF002731BC /* LFNSStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSStringUtils.m; sourceTree = "<group>"; };
+		CA8A24B01D2651CF002731BC /* LFNSStringUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSStringUtility.h; sourceTree = "<group>"; };
+		CA8A24B11D2651CF002731BC /* LFNSStringUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSStringUtility.m; sourceTree = "<group>"; };
 		CA8A24B71D266085002731BC /* libLFToolboxSecurity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLFToolboxSecurity.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8A24C11D2660D6002731BC /* LFCCHexStringEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCCHexStringEncoding.h; sourceTree = "<group>"; };
 		CA8A24C21D2660D6002731BC /* LFCCHexStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCCHexStringEncoding.m; sourceTree = "<group>"; };
@@ -211,10 +211,10 @@
 		CA8A24D71D2A01C8002731BC /* LFToolboxUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFToolboxUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8A24D91D2A01C8002731BC /* LFToolboxUIKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFToolboxUIKitTests.m; sourceTree = "<group>"; };
 		CA8A24DB1D2A01C8002731BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA8A24E21D2A097C002731BC /* LFNSRegularExpressionUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSRegularExpressionUtils.h; sourceTree = "<group>"; };
-		CA8A24E31D2A097C002731BC /* LFNSRegularExpressionUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSRegularExpressionUtils.m; sourceTree = "<group>"; };
-		CA8A24E51D2A191A002731BC /* LFNSJSONSerializationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSJSONSerializationUtils.h; sourceTree = "<group>"; };
-		CA8A24E61D2A191A002731BC /* LFNSJSONSerializationUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSJSONSerializationUtils.m; sourceTree = "<group>"; };
+		CA8A24E21D2A097C002731BC /* LFNSRegularExpressionUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSRegularExpressionUtility.h; sourceTree = "<group>"; };
+		CA8A24E31D2A097C002731BC /* LFNSRegularExpressionUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSRegularExpressionUtility.m; sourceTree = "<group>"; };
+		CA8A24E51D2A191A002731BC /* LFNSJSONSerializationUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSJSONSerializationUtility.h; sourceTree = "<group>"; };
+		CA8A24E61D2A191A002731BC /* LFNSJSONSerializationUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSJSONSerializationUtility.m; sourceTree = "<group>"; };
 		CA8A250B1D2B5262002731BC /* LFZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFZipArchive.h; sourceTree = "<group>"; };
 		CA8A250C1D2B5262002731BC /* LFZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFZipArchive.m; sourceTree = "<group>"; };
 		CA8A25101D2B528B002731BC /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
@@ -230,30 +230,30 @@
 		CA8A251E1D2B60B6002731BC /* LFStringCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFStringCoder.m; sourceTree = "<group>"; };
 		CA8A25201D2BC884002731BC /* LFRSACryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFRSACryptor.h; sourceTree = "<group>"; };
 		CA8A25211D2BC884002731BC /* LFRSACryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFRSACryptor.m; sourceTree = "<group>"; };
-		CA8A25231D2DF5AC002731BC /* LFGeometryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFGeometryUtils.h; sourceTree = "<group>"; };
-		CA8A25241D2DF5AC002731BC /* LFGeometryUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFGeometryUtils.m; sourceTree = "<group>"; };
-		CA8A25261D2E085C002731BC /* LFUIImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUIImageUtils.h; sourceTree = "<group>"; };
-		CA8A25271D2E085C002731BC /* LFUIImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIImageUtils.m; sourceTree = "<group>"; };
+		CA8A25231D2DF5AC002731BC /* LFGeometryUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFGeometryUtility.h; sourceTree = "<group>"; };
+		CA8A25241D2DF5AC002731BC /* LFGeometryUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFGeometryUtility.m; sourceTree = "<group>"; };
+		CA8A25261D2E085C002731BC /* LFUIImageUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUIImageUtility.h; sourceTree = "<group>"; };
+		CA8A25271D2E085C002731BC /* LFUIImageUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIImageUtility.m; sourceTree = "<group>"; };
 		CA8A252B1D2E2992002731BC /* LFGIFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFGIFImage.h; sourceTree = "<group>"; };
 		CA8A252C1D2E2992002731BC /* LFGIFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFGIFImage.m; sourceTree = "<group>"; };
 		CA8A252F1D2E2BE6002731BC /* LFWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFWeakProxy.h; sourceTree = "<group>"; };
 		CA8A25301D2E2BE6002731BC /* LFWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFWeakProxy.m; sourceTree = "<group>"; };
-		CA8A25421D2F8EC0002731BC /* LFNSBundleUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSBundleUtils.h; sourceTree = "<group>"; };
-		CA8A25431D2F8EC0002731BC /* LFNSBundleUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSBundleUtils.m; sourceTree = "<group>"; };
-		CA8A25451D2F9B29002731BC /* LFNSDataUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSDataUtils.h; sourceTree = "<group>"; };
-		CA8A25461D2F9B29002731BC /* LFNSDataUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSDataUtils.m; sourceTree = "<group>"; };
-		CA8A25481D2F9ECA002731BC /* LFNSDateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSDateUtils.h; sourceTree = "<group>"; };
-		CA8A25491D2F9ECA002731BC /* LFNSDateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSDateUtils.m; sourceTree = "<group>"; };
-		CACCB5571D334F22004AEA7A /* LFNSNotificationCenterUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSNotificationCenterUtils.h; sourceTree = "<group>"; };
-		CACCB5581D334F22004AEA7A /* LFNSNotificationCenterUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSNotificationCenterUtils.m; sourceTree = "<group>"; };
-		CACCB55A1D3398B2004AEA7A /* LFNSDictionaryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSDictionaryUtils.h; sourceTree = "<group>"; };
-		CACCB55B1D3398B2004AEA7A /* LFNSDictionaryUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSDictionaryUtils.m; sourceTree = "<group>"; };
-		CACCB55D1D33A4D0004AEA7A /* LFUIAlertControllerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUIAlertControllerUtils.h; sourceTree = "<group>"; };
-		CACCB55E1D33A4D0004AEA7A /* LFUIAlertControllerUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIAlertControllerUtils.m; sourceTree = "<group>"; };
+		CA8A25421D2F8EC0002731BC /* LFNSBundleUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSBundleUtility.h; sourceTree = "<group>"; };
+		CA8A25431D2F8EC0002731BC /* LFNSBundleUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSBundleUtility.m; sourceTree = "<group>"; };
+		CA8A25451D2F9B29002731BC /* LFNSDataUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSDataUtility.h; sourceTree = "<group>"; };
+		CA8A25461D2F9B29002731BC /* LFNSDataUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSDataUtility.m; sourceTree = "<group>"; };
+		CA8A25481D2F9ECA002731BC /* LFNSDateUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSDateUtility.h; sourceTree = "<group>"; };
+		CA8A25491D2F9ECA002731BC /* LFNSDateUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSDateUtility.m; sourceTree = "<group>"; };
+		CACCB5571D334F22004AEA7A /* LFNSNotificationCenterUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSNotificationCenterUtility.h; sourceTree = "<group>"; };
+		CACCB5581D334F22004AEA7A /* LFNSNotificationCenterUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSNotificationCenterUtility.m; sourceTree = "<group>"; };
+		CACCB55A1D3398B2004AEA7A /* LFNSDictionaryUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFNSDictionaryUtility.h; sourceTree = "<group>"; };
+		CACCB55B1D3398B2004AEA7A /* LFNSDictionaryUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFNSDictionaryUtility.m; sourceTree = "<group>"; };
+		CACCB55D1D33A4D0004AEA7A /* LFUIAlertControllerUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUIAlertControllerUtility.h; sourceTree = "<group>"; };
+		CACCB55E1D33A4D0004AEA7A /* LFUIAlertControllerUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIAlertControllerUtility.m; sourceTree = "<group>"; };
 		CAFC1E2F1D348B8A00DDB45D /* LFUIBarButtonItem+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFUIBarButtonItem+Add.h"; sourceTree = "<group>"; };
 		CAFC1E301D348B8A00DDB45D /* LFUIBarButtonItem+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFUIBarButtonItem+Add.m"; sourceTree = "<group>"; };
-		CAFC1E321D348F7900DDB45D /* LFUIBarButtonItemUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUIBarButtonItemUtils.h; sourceTree = "<group>"; };
-		CAFC1E331D348F7900DDB45D /* LFUIBarButtonItemUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIBarButtonItemUtils.m; sourceTree = "<group>"; };
+		CAFC1E321D348F7900DDB45D /* LFUIBarButtonItemUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUIBarButtonItemUtility.h; sourceTree = "<group>"; };
+		CAFC1E331D348F7900DDB45D /* LFUIBarButtonItemUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIBarButtonItemUtility.m; sourceTree = "<group>"; };
 		CAFC1E351D34932600DDB45D /* LFUIColor+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFUIColor+Add.h"; sourceTree = "<group>"; };
 		CAFC1E361D34932600DDB45D /* LFUIColor+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFUIColor+Add.m"; sourceTree = "<group>"; };
 		CAFC1E381D349E9400DDB45D /* LFUIView+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFUIView+Add.h"; sourceTree = "<group>"; };
@@ -262,16 +262,16 @@
 		CAFC1E3F1D34A50900DDB45D /* LFUIButton+EnlargeEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFUIButton+EnlargeEdge.m"; sourceTree = "<group>"; };
 		CAFC1E411D34BCC600DDB45D /* LFUIControl+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFUIControl+Add.h"; sourceTree = "<group>"; };
 		CAFC1E421D34BCC600DDB45D /* LFUIControl+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFUIControl+Add.m"; sourceTree = "<group>"; };
-		CAFC1E471D34C60600DDB45D /* LFUIDeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUIDeviceUtils.h; sourceTree = "<group>"; };
-		CAFC1E481D34C60600DDB45D /* LFUIDeviceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIDeviceUtils.m; sourceTree = "<group>"; };
+		CAFC1E471D34C60600DDB45D /* LFUIDeviceUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUIDeviceUtility.h; sourceTree = "<group>"; };
+		CAFC1E481D34C60600DDB45D /* LFUIDeviceUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIDeviceUtility.m; sourceTree = "<group>"; };
 		CAFC1E4A1D34E57F00DDB45D /* LFUIFont+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFUIFont+Add.h"; sourceTree = "<group>"; };
 		CAFC1E4B1D34E57F00DDB45D /* LFUIFont+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFUIFont+Add.m"; sourceTree = "<group>"; };
 		CAFC1E4D1D34E89200DDB45D /* LFUIGestureRecognizer+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFUIGestureRecognizer+Add.h"; sourceTree = "<group>"; };
 		CAFC1E4E1D34E89200DDB45D /* LFUIGestureRecognizer+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFUIGestureRecognizer+Add.m"; sourceTree = "<group>"; };
 		CAFC1E501D34ED5A00DDB45D /* LFUINavigationController+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFUINavigationController+Add.h"; sourceTree = "<group>"; };
 		CAFC1E511D34ED5A00DDB45D /* LFUINavigationController+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFUINavigationController+Add.m"; sourceTree = "<group>"; };
-		CAFC1E531D34F07700DDB45D /* LFUIScrollViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUIScrollViewUtils.h; sourceTree = "<group>"; };
-		CAFC1E541D34F07700DDB45D /* LFUIScrollViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIScrollViewUtils.m; sourceTree = "<group>"; };
+		CAFC1E531D34F07700DDB45D /* LFUIScrollViewUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUIScrollViewUtility.h; sourceTree = "<group>"; };
+		CAFC1E541D34F07700DDB45D /* LFUIScrollViewUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIScrollViewUtility.m; sourceTree = "<group>"; };
 		E6B7FC7D1D36348E00DBB108 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E6B7FC8D1D36455400DBB108 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6B7FC8E1D36455400DBB108 /* LFContentSizeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFContentSizeTests.m; sourceTree = "<group>"; };
@@ -426,24 +426,24 @@
 				CA8A24A91D24F032002731BC /* LFFoundationDefines.h */,
 				CA8A250B1D2B5262002731BC /* LFZipArchive.h */,
 				CA8A250C1D2B5262002731BC /* LFZipArchive.m */,
-				CA8A24B01D2651CF002731BC /* LFNSStringUtils.h */,
-				CA8A24B11D2651CF002731BC /* LFNSStringUtils.m */,
-				CA8A24E21D2A097C002731BC /* LFNSRegularExpressionUtils.h */,
-				CA8A24E31D2A097C002731BC /* LFNSRegularExpressionUtils.m */,
-				CA8A24E51D2A191A002731BC /* LFNSJSONSerializationUtils.h */,
-				CA8A24E61D2A191A002731BC /* LFNSJSONSerializationUtils.m */,
+				CA8A24B01D2651CF002731BC /* LFNSStringUtility.h */,
+				CA8A24B11D2651CF002731BC /* LFNSStringUtility.m */,
+				CA8A24E21D2A097C002731BC /* LFNSRegularExpressionUtility.h */,
+				CA8A24E31D2A097C002731BC /* LFNSRegularExpressionUtility.m */,
+				CA8A24E51D2A191A002731BC /* LFNSJSONSerializationUtility.h */,
+				CA8A24E61D2A191A002731BC /* LFNSJSONSerializationUtility.m */,
 				CA8A251D1D2B60B6002731BC /* LFStringCoder.h */,
 				CA8A251E1D2B60B6002731BC /* LFStringCoder.m */,
-				CA8A25421D2F8EC0002731BC /* LFNSBundleUtils.h */,
-				CA8A25431D2F8EC0002731BC /* LFNSBundleUtils.m */,
-				CA8A25451D2F9B29002731BC /* LFNSDataUtils.h */,
-				CA8A25461D2F9B29002731BC /* LFNSDataUtils.m */,
-				CA8A25481D2F9ECA002731BC /* LFNSDateUtils.h */,
-				CA8A25491D2F9ECA002731BC /* LFNSDateUtils.m */,
-				CACCB5571D334F22004AEA7A /* LFNSNotificationCenterUtils.h */,
-				CACCB5581D334F22004AEA7A /* LFNSNotificationCenterUtils.m */,
-				CACCB55A1D3398B2004AEA7A /* LFNSDictionaryUtils.h */,
-				CACCB55B1D3398B2004AEA7A /* LFNSDictionaryUtils.m */,
+				CA8A25421D2F8EC0002731BC /* LFNSBundleUtility.h */,
+				CA8A25431D2F8EC0002731BC /* LFNSBundleUtility.m */,
+				CA8A25451D2F9B29002731BC /* LFNSDataUtility.h */,
+				CA8A25461D2F9B29002731BC /* LFNSDataUtility.m */,
+				CA8A25481D2F9ECA002731BC /* LFNSDateUtility.h */,
+				CA8A25491D2F9ECA002731BC /* LFNSDateUtility.m */,
+				CACCB5571D334F22004AEA7A /* LFNSNotificationCenterUtility.h */,
+				CACCB5581D334F22004AEA7A /* LFNSNotificationCenterUtility.m */,
+				CACCB55A1D3398B2004AEA7A /* LFNSDictionaryUtility.h */,
+				CACCB55B1D3398B2004AEA7A /* LFNSDictionaryUtility.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -483,18 +483,18 @@
 				CA8A24A41D24EF26002731BC /* LFViewRecycler.m */,
 				CA8A24D01D26714F002731BC /* LFContentSize.h */,
 				CA8A24D11D26714F002731BC /* LFContentSize.m */,
-				CA8A25231D2DF5AC002731BC /* LFGeometryUtils.h */,
-				CA8A25241D2DF5AC002731BC /* LFGeometryUtils.m */,
-				CA8A25261D2E085C002731BC /* LFUIImageUtils.h */,
-				CA8A25271D2E085C002731BC /* LFUIImageUtils.m */,
+				CA8A25231D2DF5AC002731BC /* LFGeometryUtility.h */,
+				CA8A25241D2DF5AC002731BC /* LFGeometryUtility.m */,
+				CA8A25261D2E085C002731BC /* LFUIImageUtility.h */,
+				CA8A25271D2E085C002731BC /* LFUIImageUtility.m */,
 				CA8A252B1D2E2992002731BC /* LFGIFImage.h */,
 				CA8A252C1D2E2992002731BC /* LFGIFImage.m */,
-				CACCB55D1D33A4D0004AEA7A /* LFUIAlertControllerUtils.h */,
-				CACCB55E1D33A4D0004AEA7A /* LFUIAlertControllerUtils.m */,
+				CACCB55D1D33A4D0004AEA7A /* LFUIAlertControllerUtility.h */,
+				CACCB55E1D33A4D0004AEA7A /* LFUIAlertControllerUtility.m */,
 				CAFC1E2F1D348B8A00DDB45D /* LFUIBarButtonItem+Add.h */,
 				CAFC1E301D348B8A00DDB45D /* LFUIBarButtonItem+Add.m */,
-				CAFC1E321D348F7900DDB45D /* LFUIBarButtonItemUtils.h */,
-				CAFC1E331D348F7900DDB45D /* LFUIBarButtonItemUtils.m */,
+				CAFC1E321D348F7900DDB45D /* LFUIBarButtonItemUtility.h */,
+				CAFC1E331D348F7900DDB45D /* LFUIBarButtonItemUtility.m */,
 				CAFC1E3E1D34A50900DDB45D /* LFUIButton+EnlargeEdge.h */,
 				CAFC1E3F1D34A50900DDB45D /* LFUIButton+EnlargeEdge.m */,
 				CAFC1E351D34932600DDB45D /* LFUIColor+Add.h */,
@@ -503,16 +503,16 @@
 				CAFC1E391D349E9400DDB45D /* LFUIView+Add.m */,
 				CAFC1E411D34BCC600DDB45D /* LFUIControl+Add.h */,
 				CAFC1E421D34BCC600DDB45D /* LFUIControl+Add.m */,
-				CAFC1E471D34C60600DDB45D /* LFUIDeviceUtils.h */,
-				CAFC1E481D34C60600DDB45D /* LFUIDeviceUtils.m */,
+				CAFC1E471D34C60600DDB45D /* LFUIDeviceUtility.h */,
+				CAFC1E481D34C60600DDB45D /* LFUIDeviceUtility.m */,
 				CAFC1E4A1D34E57F00DDB45D /* LFUIFont+Add.h */,
 				CAFC1E4B1D34E57F00DDB45D /* LFUIFont+Add.m */,
 				CAFC1E4D1D34E89200DDB45D /* LFUIGestureRecognizer+Add.h */,
 				CAFC1E4E1D34E89200DDB45D /* LFUIGestureRecognizer+Add.m */,
 				CAFC1E501D34ED5A00DDB45D /* LFUINavigationController+Add.h */,
 				CAFC1E511D34ED5A00DDB45D /* LFUINavigationController+Add.m */,
-				CAFC1E531D34F07700DDB45D /* LFUIScrollViewUtils.h */,
-				CAFC1E541D34F07700DDB45D /* LFUIScrollViewUtils.m */,
+				CAFC1E531D34F07700DDB45D /* LFUIScrollViewUtility.h */,
+				CAFC1E541D34F07700DDB45D /* LFUIScrollViewUtility.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -863,21 +863,21 @@
 			files = (
 				CAFC1E3A1D349E9400DDB45D /* LFUIView+Add.m in Sources */,
 				CAFC1E521D34ED5A00DDB45D /* LFUINavigationController+Add.m in Sources */,
-				CACCB5591D334F22004AEA7A /* LFNSNotificationCenterUtils.m in Sources */,
-				CACCB55C1D3398B2004AEA7A /* LFNSDictionaryUtils.m in Sources */,
-				CACCB55F1D33A4D0004AEA7A /* LFUIAlertControllerUtils.m in Sources */,
+				CACCB5591D334F22004AEA7A /* LFNSNotificationCenterUtility.m in Sources */,
+				CACCB55C1D3398B2004AEA7A /* LFNSDictionaryUtility.m in Sources */,
+				CACCB55F1D33A4D0004AEA7A /* LFUIAlertControllerUtility.m in Sources */,
 				CAFC1E311D348B8A00DDB45D /* LFUIBarButtonItem+Add.m in Sources */,
 				CAFC1E431D34BCC600DDB45D /* LFUIControl+Add.m in Sources */,
 				CAFC1E371D34932600DDB45D /* LFUIColor+Add.m in Sources */,
-				CAFC1E341D348F7900DDB45D /* LFUIBarButtonItemUtils.m in Sources */,
+				CAFC1E341D348F7900DDB45D /* LFUIBarButtonItemUtility.m in Sources */,
 				CA8A24941D24CA89002731BC /* LFPaths.m in Sources */,
 				CAFC1E401D34A50900DDB45D /* LFUIButton+EnlargeEdge.m in Sources */,
-				CAFC1E551D34F07700DDB45D /* LFUIScrollViewUtils.m in Sources */,
+				CAFC1E551D34F07700DDB45D /* LFUIScrollViewUtility.m in Sources */,
 				CAFC1E4C1D34E57F00DDB45D /* LFUIFont+Add.m in Sources */,
 				CAFC1E4F1D34E89200DDB45D /* LFUIGestureRecognizer+Add.m in Sources */,
 				CA8A24601D24BF0E002731BC /* LFMath.m in Sources */,
-				CA8A24B21D2651CF002731BC /* LFNSStringUtils.m in Sources */,
-				CAFC1E491D34C60600DDB45D /* LFUIDeviceUtils.m in Sources */,
+				CA8A24B21D2651CF002731BC /* LFNSStringUtility.m in Sources */,
+				CAFC1E491D34C60600DDB45D /* LFUIDeviceUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -885,7 +885,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6B7FC851D36432000DBB108 /* LFNSStringUtils.m in Sources */,
+				E6B7FC851D36432000DBB108 /* LFNSStringUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -909,7 +909,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6B7FC841D3642AE00DBB108 /* LFUIDeviceUtils.m in Sources */,
+				E6B7FC841D3642AE00DBB108 /* LFUIDeviceUtility.m in Sources */,
 				CA8A24A51D24EF26002731BC /* LFViewRecycler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -923,22 +923,22 @@
 				CA8A252E1D2E2992002731BC /* LFGIFImage.m in Sources */,
 				CA8A24CB1D2660D6002731BC /* LFCommonCryptor.m in Sources */,
 				CA8A24CD1D2660D6002731BC /* LFCommonHMAC.m in Sources */,
-				CA8A25251D2DF5AC002731BC /* LFGeometryUtils.m in Sources */,
+				CA8A25251D2DF5AC002731BC /* LFGeometryUtility.m in Sources */,
 				CA8A24CA1D2660D6002731BC /* LFCCHexStringEncoding.m in Sources */,
 				CA8A251F1D2B60B6002731BC /* LFStringCoder.m in Sources */,
-				CA8A25471D2F9B29002731BC /* LFNSDataUtils.m in Sources */,
+				CA8A25471D2F9B29002731BC /* LFNSDataUtility.m in Sources */,
 				CA8A251A1D2B528B002731BC /* mztools.c in Sources */,
 				CA8A24D21D26714F002731BC /* LFContentSize.m in Sources */,
-				CA8A254A1D2F9ECA002731BC /* LFNSDateUtils.m in Sources */,
-				CA8A24E71D2A191A002731BC /* LFNSJSONSerializationUtils.m in Sources */,
+				CA8A254A1D2F9ECA002731BC /* LFNSDateUtility.m in Sources */,
+				CA8A24E71D2A191A002731BC /* LFNSJSONSerializationUtility.m in Sources */,
 				CA8A25191D2B528B002731BC /* ioapi.c in Sources */,
 				CA8A25221D2BC884002731BC /* LFRSACryptor.m in Sources */,
 				CA8A251C1D2B528B002731BC /* zip.c in Sources */,
-				CA8A25441D2F8EC0002731BC /* LFNSBundleUtils.m in Sources */,
+				CA8A25441D2F8EC0002731BC /* LFNSBundleUtility.m in Sources */,
 				CA8A24CC1D2660D6002731BC /* LFCommonDigest.m in Sources */,
 				CA8A25311D2E2BE6002731BC /* LFWeakProxy.m in Sources */,
-				CA8A24E41D2A097C002731BC /* LFNSRegularExpressionUtils.m in Sources */,
-				CA8A25281D2E085C002731BC /* LFUIImageUtils.m in Sources */,
+				CA8A24E41D2A097C002731BC /* LFNSRegularExpressionUtility.m in Sources */,
+				CA8A25281D2E085C002731BC /* LFUIImageUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

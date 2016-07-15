@@ -9,8 +9,8 @@
 #import "LFGIFImage.h"
 #import <ImageIO/ImageIO.h>
 #import <MobileCoreServices/MobileCoreServices.h>
-#import "LFNSStringUtils.h"
-#import "LFUIImageUtils.h"
+#import "LFNSStringUtility.h"
+#import "LFUIImageUtility.h"
 
 @implementation LFGIFImage {
     CGImageSourceRef _gifSource; // keep for gif decode
@@ -38,7 +38,7 @@
     
     for (int s = 0; s < scales.count; s++) {
         scale = ((NSNumber* )scales[s]).floatValue;
-        NSString *scaledName = [LFNSStringUtils filenameWithString:res appendingByNameScale:scale];
+        NSString *scaledName = [LFNSStringUtility filenameWithString:res appendingByNameScale:scale];
         // if no ext, guess by system supported.
         NSArray *exts = ext.length > 0 ? @[ext] : @[@"", @"gif",@"png",@"jpg",@"jpeg"];
         for (int e = 0; e < exts.count; e++) {
@@ -69,7 +69,7 @@
 
 - (instancetype)initWithContentsOfFile:(NSString *)path {
     NSData *data = [NSData dataWithContentsOfFile:path];
-    return [self initWithData:data scale:[LFNSStringUtils pathScaleWithString:path]];
+    return [self initWithData:data scale:[LFNSStringUtility pathScaleWithString:path]];
 }
 
 - (instancetype)initWithData:(NSData *)data {

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LFNSDateUtils : NSObject
+@interface LFNSDateUtility : NSObject
 
 #pragma mark - 日期格式化
 ///=============================================================================

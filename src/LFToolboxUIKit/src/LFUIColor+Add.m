@@ -7,7 +7,7 @@
 //
 
 #import "LFUIColor+Add.h"
-#import "LFNSStringUtils.h"
+#import "LFNSStringUtility.h"
 
 static const CGFloat kFBRGBMax = 255.0f;
 static const uint32_t kColorMaskRed     = 0xFF000000;
@@ -321,7 +321,7 @@ static inline NSUInteger hexStrToInt(NSString *str) {
 
 static BOOL hexStrToRGBA(NSString *str,
                          CGFloat *r, CGFloat *g, CGFloat *b, CGFloat *a) {
-    str = [[LFNSStringUtils stringByTrim:str] uppercaseString];
+    str = [[LFNSStringUtility stringByTrim:str] uppercaseString];
     if ([str hasPrefix:@"#"]) {
         str = [str substringFromIndex:1];
     } else if ([str hasPrefix:@"0X"]) {

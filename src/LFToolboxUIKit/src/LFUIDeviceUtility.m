@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFUIDeviceUtils.h"
+#import "LFUIDeviceUtility.h"
 #include <sys/sysctl.h>
 #include <mach/mach.h>
 #import "LFFoundation.h"
@@ -384,7 +384,7 @@
         return YES;
     }
     
-    NSString *path = [NSString stringWithFormat:@"/private/%@", [LFNSStringUtils stringWithUUID]];
+    NSString *path = [NSString stringWithFormat:@"/private/%@", [LFNSStringUtility stringWithUUID]];
     if ([@"test" writeToFile : path atomically : YES encoding : NSUTF8StringEncoding error : NULL]) {
         [[NSFileManager defaultManager] removeItemAtPath:path error:nil];
         return YES;

@@ -6,10 +6,10 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFNSDataUtils.h"
+#import "LFNSDataUtility.h"
 
 
-@implementation LFNSDataUtils
+@implementation LFNSDataUtility
 
 + (NSData *)dataNamed:(NSString *)name{
     

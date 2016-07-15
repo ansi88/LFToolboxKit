@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LFNSJSONSerializationUtils : NSObject
+@interface LFNSJSONSerializationUtility : NSObject
 
 + (NSString *)JSONStringForObject:(id)object
                             error:(NSError *__autoreleasing *)errorRef

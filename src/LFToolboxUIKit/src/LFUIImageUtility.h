@@ -17,7 +17,7 @@
 CGImageRef CGImageCreateDecoded(CGImageRef imageRef);
 
 
-@interface LFUIImageUtils : NSObject
+@interface LFUIImageUtility : NSObject
 
 #pragma mark - 图像解码
 ///=============================================================================

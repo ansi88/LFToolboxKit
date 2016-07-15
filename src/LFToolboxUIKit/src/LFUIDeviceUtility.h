@@ -11,7 +11,7 @@
 
 typedef void (^ cameraAuthorziedBlock) (void);
 
-@interface LFUIDeviceUtils : NSObject
+@interface LFUIDeviceUtility : NSObject
 
 + (BOOL)isPad;
 

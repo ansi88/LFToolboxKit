@@ -6,10 +6,10 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFNSStringUtils.h"
+#import "LFNSStringUtility.h"
 #import "LFCommonCrypto.h"
 
-@implementation LFNSStringUtils
+@implementation LFNSStringUtility
 
 
 #pragma mark --md5

@@ -25,6 +25,7 @@
 #import "LFUIFont+Add.h"
 #import "LFUIGestureRecognizer+Add.h"
 #import "LFUINavigationController+Add.h"
+#import "LFUIScrollViewUtility.h"
 
 
 #endif /* LFUIKit_h */

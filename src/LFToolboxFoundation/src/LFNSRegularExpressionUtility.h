@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LFNSRegularExpressionUtils : NSObject
+@interface LFNSRegularExpressionUtility : NSObject
 
 /*!
  	@method

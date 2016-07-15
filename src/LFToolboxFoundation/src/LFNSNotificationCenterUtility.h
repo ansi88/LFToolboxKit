@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LFNSNotificationCenterUtils : NSObject
+@interface LFNSNotificationCenterUtility : NSObject
 
 + (void)postNotificationOnMainThreadWithName:(NSString *)name object:(id)object;
 

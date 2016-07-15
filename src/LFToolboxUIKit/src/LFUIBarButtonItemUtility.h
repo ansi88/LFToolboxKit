@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LFUIBarButtonItemUtils : NSObject
+@interface LFUIBarButtonItemUtility : NSObject
 
 + (UIBarButtonItem *)barButtonItemWithTitle:(NSString *)title
                                            image:(UIImage *)image

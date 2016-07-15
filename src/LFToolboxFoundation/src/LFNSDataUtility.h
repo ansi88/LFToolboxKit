@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LFNSDataUtils : NSObject
+@interface LFNSDataUtility : NSObject
 
 /// 从 main bundle 里加载数据 (和 [UIImage imageNamed:] 类似).
 + (NSData *)dataNamed:(NSString *)name;

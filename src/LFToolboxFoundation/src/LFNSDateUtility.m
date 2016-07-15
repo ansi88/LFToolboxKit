@@ -6,9 +6,9 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFNSDateUtils.h"
+#import "LFNSDateUtility.h"
 
-@implementation LFNSDateUtils
+@implementation LFNSDateUtility
 
 + (NSString *)stringWithDate:(NSDate *)date format:(NSString *)format{
     

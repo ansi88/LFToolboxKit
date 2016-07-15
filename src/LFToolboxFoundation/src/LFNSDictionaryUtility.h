@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LFNSDictionaryUtils : NSObject
+@interface LFNSDictionaryUtility : NSObject
 
 /// 返回所有key (按字典序排列)
 + (NSArray *)allKeysSorted:(NSDictionary *)dictionary;

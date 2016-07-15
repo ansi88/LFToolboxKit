@@ -7,12 +7,12 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFNSBundleUtils.h"
+#import "LFNSBundleUtility.h"
 #import <UIKit/UIKit.h>
-#import "LFNSStringUtils.h"
+#import "LFNSStringUtility.h"
 
 #define SUPPORT_SCALES @[@3, @2, @1]
-@implementation LFNSBundleUtils
+@implementation LFNSBundleUtility
 
 + (NSString *)pathForScaledResource:(NSString *)name ofType:(NSString *)ext inDirectory:(NSString *)bundlePath{
     
@@ -25,8 +25,8 @@
     NSArray *scales = [self allScales];
     for (int s = 0; s < scales.count; s++) {
         CGFloat scale = ((NSNumber *)scales[s]).floatValue;
-        NSString *scaledName = ext.length ?  [LFNSStringUtils filenameWithString:name appendingByNameScale:scale]
-        :  [LFNSStringUtils filenameWithString:name appendingByPathScale:scale];
+        NSString *scaledName = ext.length ?  [LFNSStringUtility filenameWithString:name appendingByNameScale:scale]
+        :  [LFNSStringUtility filenameWithString:name appendingByPathScale:scale];
         path = [[NSBundle mainBundle] pathForResource:scaledName ofType:ext inDirectory:bundlePath];
         if (path) break;
     }

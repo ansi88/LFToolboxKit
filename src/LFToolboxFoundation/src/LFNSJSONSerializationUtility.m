@@ -6,9 +6,9 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFNSJSONSerializationUtils.h"
+#import "LFNSJSONSerializationUtility.h"
 
-@implementation LFNSJSONSerializationUtils
+@implementation LFNSJSONSerializationUtility
 
 #pragma mark --public Method
 + (NSString *)JSONStringForObject:(id)object

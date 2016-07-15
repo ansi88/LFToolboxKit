@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LFNSBundleUtils : NSObject
+@interface LFNSBundleUtility : NSObject
 
 /**
  在bundle里查找指定文件，并返回完整文件路径。

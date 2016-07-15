@@ -10,14 +10,14 @@
 #define LFFoundation_h
 
 #import "LFZipArchive.h"
-#import "LFNSStringUtils.h"
-#import "LFNSRegularExpressionUtils.h"
-#import "LFNSJSONSerializationUtils.h"
+#import "LFNSStringUtility.h"
+#import "LFNSRegularExpressionUtility.h"
+#import "LFNSJSONSerializationUtility.h"
 #import "LFStringCoder.h"
-#import "LFNSBundleUtils.h"
-#import "LFNSDataUtils.h"
-#import "LFNSDateUtils.h"
-#import "LFNSNotificationCenterUtils.h"
-#import "LFNSDictionaryUtils.h"
+#import "LFNSBundleUtility.h"
+#import "LFNSDataUtility.h"
+#import "LFNSDateUtility.h"
+#import "LFNSNotificationCenterUtility.h"
+#import "LFNSDictionaryUtility.h"
 
 #endif /* LFFoundation_h */

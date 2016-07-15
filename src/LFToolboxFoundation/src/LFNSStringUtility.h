@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
-@interface LFNSStringUtils : NSObject
+@interface LFNSStringUtility : NSObject
 
 
 ///=============================================================================

@@ -6,10 +6,10 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFNSNotificationCenterUtils.h"
+#import "LFNSNotificationCenterUtility.h"
 #include <pthread.h>
 
-@implementation LFNSNotificationCenterUtils
+@implementation LFNSNotificationCenterUtility
 
 #pragma mark --public Method
 

@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFNSDictionaryUtils.h"
+#import "LFNSDictionaryUtility.h"
 
 static NSNumber *NSNumberFromID(id value) {
     static NSCharacterSet *dot;
@@ -46,7 +46,7 @@ static NSNumber *NSNumberFromID(id value) {
     return def;
 
 
-@implementation LFNSDictionaryUtils
+@implementation LFNSDictionaryUtility
 
 + (NSArray *)allKeysSorted:(NSDictionary *)dictionary{
     

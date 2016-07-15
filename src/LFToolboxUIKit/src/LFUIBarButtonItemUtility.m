@@ -6,12 +6,12 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFUIBarButtonItemUtils.h"
+#import "LFUIBarButtonItemUtility.h"
 #import "LFUIColor+Add.h"
 #import "LFContentSize.h"
 #import "LFUIView+Add.h"
 
-@implementation LFUIBarButtonItemUtils
+@implementation LFUIBarButtonItemUtility
 
 + (UIBarButtonItem *)barButtonItemWithTitle:(NSString *)title
                                       image:(UIImage *)image

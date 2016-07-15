@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "LFUIDeviceUtils.h"
+#import "LFUIDeviceUtility.h"
 #include <sys/sysctl.h>
 
 @interface LFUIDeviceUtilsTests : XCTestCase

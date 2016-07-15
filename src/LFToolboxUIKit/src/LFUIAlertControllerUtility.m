@@ -6,13 +6,13 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFUIAlertControllerUtils.h"
+#import "LFUIAlertControllerUtility.h"
 
 static NSInteger const UIAlertControllerBlocksCancelButtonIndex = 0;
 static NSInteger const UIAlertControllerBlocksDestructiveButtonIndex = 1;
 static NSInteger const UIAlertControllerBlocksFirstOtherButtonIndex = 2;
 
-@implementation LFUIAlertControllerUtils
+@implementation LFUIAlertControllerUtility
 
 + (nonnull UIAlertController *)showInViewController:(UIViewController *)viewController
                            withTitle:(NSString *)title

@@ -6,9 +6,9 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFUIScrollViewUtils.h"
+#import "LFUIScrollViewUtility.h"
 
-@implementation LFUIScrollViewUtils
+@implementation LFUIScrollViewUtility
 
 + (void)scrollView:(UIScrollView *)scrollView scrollToTopAnimated:(BOOL)animated{
     

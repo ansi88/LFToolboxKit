@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface LFUIScrollViewUtils : NSObject
+@interface LFUIScrollViewUtility : NSObject
 
 
 + (void)scrollView:(UIScrollView *)scrollView scrollToTopAnimated:(BOOL)animated;

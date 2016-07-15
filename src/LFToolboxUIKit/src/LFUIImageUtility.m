@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFUIImageUtils.h"
+#import "LFUIImageUtility.h"
 #import <ImageIO/ImageIO.h>
 #import "LFUIKitDefines.h"
 #import <Accelerate/Accelerate.h>
@@ -70,7 +70,7 @@ static void _lf_cleanupBuffer(void *userData, void *buf_data) {
     free(buf_data);
 }
 
-@implementation LFUIImageUtils
+@implementation LFUIImageUtility
 
 #pragma mark - 图像解码
 + (UIImage *)decodeImage:(UIImage *)image{
@@ -432,7 +432,7 @@ static void _lf_cleanupBuffer(void *userData, void *buf_data) {
     
     if (size.width <= 0 || size.height <= 0) return nil;
     UIGraphicsBeginImageContextWithOptions(size, NO, image.scale);
-    [LFUIImageUtils drawImage:image inRect:CGRectMake(0, 0, size.width, size.height) withContentMode:contentMode clipsToBounds:NO];
+    [LFUIImageUtility drawImage:image inRect:CGRectMake(0, 0, size.width, size.height) withContentMode:contentMode clipsToBounds:NO];
     UIImage *resizeImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return resizeImage;
@@ -477,7 +477,7 @@ static void _lf_cleanupBuffer(void *userData, void *buf_data) {
 
 + (UIImage *)cutImage:(UIImage *)image roundCornerRadius:(CGFloat)radius{
     
-    return  [LFUIImageUtils cutImage:image roundCornerRadius:radius corners:UIRectCornerAllCorners borderWidth:0];
+    return  [LFUIImageUtility cutImage:image roundCornerRadius:radius corners:UIRectCornerAllCorners borderWidth:0];
 }
 
 + (UIImage *)cutImage:(UIImage *)image roundCornerRadius:(CGFloat)radius
@@ -536,17 +536,17 @@ static void _lf_cleanupBuffer(void *userData, void *buf_data) {
 
 + (UIImage *)rotateImageLeft90:(UIImage *)image{
     
-    return [LFUIImageUtils rotateImage:image radians:DegreesToRadians(90) fitSize:YES];
+    return [LFUIImageUtility rotateImage:image radians:DegreesToRadians(90) fitSize:YES];
 }
 
 + (UIImage *)rotateImageRight90:(UIImage *)image{
     
-    return [LFUIImageUtils rotateImage:image radians:DegreesToRadians(-90) fitSize:YES];
+    return [LFUIImageUtility rotateImage:image radians:DegreesToRadians(-90) fitSize:YES];
 }
 
 + (UIImage *)RotateImage180:(UIImage *)image{
     
-    return [LFUIImageUtils  flipImage:image horizontal:YES vertical:YES];
+    return [LFUIImageUtility  flipImage:image horizontal:YES vertical:YES];
 }
 
 + (UIImage *)flipImage:(UIImage *)image horizontal:(BOOL)horizontal vertical:(BOOL)vertical {
@@ -582,12 +582,12 @@ static void _lf_cleanupBuffer(void *userData, void *buf_data) {
 
 + (UIImage *)flipImageVertical:(UIImage *)image{
     
-    return [LFUIImageUtils flipImage:image horizontal:NO vertical:YES];
+    return [LFUIImageUtility flipImage:image horizontal:NO vertical:YES];
 }
 
 + (UIImage *)flipImageHorizontal:(UIImage *)image{
     
-    return [LFUIImageUtils flipImage:image horizontal:YES vertical:NO];
+    return [LFUIImageUtility flipImage:image horizontal:YES vertical:NO];
 }
 
 #pragma mark - 图片效果

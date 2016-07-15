@@ -6,9 +6,9 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFNSRegularExpressionUtils.h"
+#import "LFNSRegularExpressionUtility.h"
 
-@implementation LFNSRegularExpressionUtils
+@implementation LFNSRegularExpressionUtility
 
 //字符串是否匹配正则
 + (BOOL)matchsInString:(NSString *)string regex:(NSString *)regex{
