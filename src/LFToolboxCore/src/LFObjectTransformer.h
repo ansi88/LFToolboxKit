@@ -37,9 +37,6 @@
 + (NSString *)URLl2string:(NSURL *)url;
 + (NSURL *)string2URL:(NSString *)string;
 
-+ (NSDictionary *)XMLdata2dictionary:(NSData *)data;
-+ (NSData *)dictionary2XMLdata:(NSDictionary *)dictionary;
-
 + (UIImage *)data2image:(NSData *)data;
 + (NSData *)image2data:(UIImage *)image;
 

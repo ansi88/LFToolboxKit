@@ -75,14 +75,6 @@
     return [NSURL URLWithString:string];
 }
 
-+ (NSDictionary *)XMLdata2dictionary:(NSData *)data {
-    return [NSPropertyListSerialization propertyListWithData:data options:NSPropertyListMutableContainersAndLeaves format:nil error:nil];
-}
-+ (NSData *)dictionary2XMLdata:(NSDictionary *)dictionary {
-    
-    return [NSPropertyListSerialization dataWithPropertyList:dictionary format:NSPropertyListXMLFormat_v1_0 options:0 error:nil];
-}
-
 + (UIImage *)data2image:(NSData *)data {
     return [UIImage imageWithData:data];
 }
@@ -105,13 +97,13 @@
     NSMutableString *ret = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH];
     
     for(int i = 0; i<CC_MD5_DIGEST_LENGTH; i++) {
-        [ret appendFormat:@"%2s",result];
+        [ret appendFormat:@"%2x",result[i]];
     }
     return ret;
 }
 
 + (NSString *)string2URLencodingString:(NSString *)string {
-    return [string stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    return [string stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLUserAllowedCharacterSet]];
 }
 + (NSString *)URLencodingString2string:(NSString *)URLencodingstring {
     return [URLencodingstring stringByRemovingPercentEncoding];
