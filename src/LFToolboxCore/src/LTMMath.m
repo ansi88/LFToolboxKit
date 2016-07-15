@@ -6,35 +6,24 @@
 //  Copyright © 2016年 live Interactive. All rights reserved.
 //
 
-#import "LFMath.h"
-#import "LFCoreDefines.h"
+#import "LTMMath.h"
+#import "LTMCoreKitDefines.h"
 
-@implementation LFMath
+@implementation LTMMath
 
+#pragma mark -
+#pragma mark - floor
 + (CGRect)floorCGRect:(CGRect)bounds {
     return (CGRect){[self floorCGPoint:bounds.origin],[self floorCGSize:bounds.size]};
-}
-
-+ (CGRect)ceilCGRect:(CGRect)bounds {
-    return (CGRect){[self ceilCGPoint:bounds.origin],[self ceilCGSize:bounds.size]};
 }
 
 + (CGPoint)floorCGPoint:(CGPoint)point {
     return CGPointMake([self floorCGFloat:point.x], [self floorCGFloat:point.y]);
 }
 
-+ (CGPoint)ceilCGPoint:(CGPoint)point {
-    return CGPointMake([self ceilCGFloat:point.x], [self ceilCGFloat:point.y]);
-}
-
 + (CGSize)floorCGSize:(CGSize)size {
     return CGSizeMake([self floorCGFloat:size.width],
                       [self floorCGFloat:size.height]);
-}
-
-+ (CGSize)ceilCGSize:(CGSize)size {
-    return CGSizeMake([self ceilCGFloat:size.width],
-                      [self ceilCGFloat:size.height]);
 }
 
 + (CGFloat)floorCGFloat:(CGFloat)floatValue {
@@ -43,6 +32,24 @@
 #else
     return floorf(floatValue);
 #endif
+}
+
+#pragma mark -
+#pragma mark - ceil
+
++ (CGRect)ceilCGRect:(CGRect)bounds {
+    return (CGRect){[self ceilCGPoint:bounds.origin],[self ceilCGSize:bounds.size]};
+}
+
+
+
++ (CGPoint)ceilCGPoint:(CGPoint)point {
+    return CGPointMake([self ceilCGFloat:point.x], [self ceilCGFloat:point.y]);
+}
+
++ (CGSize)ceilCGSize:(CGSize)size {
+    return CGSizeMake([self ceilCGFloat:size.width],
+                      [self ceilCGFloat:size.height]);
 }
 
 + (CGFloat)ceilCGFloat:(CGFloat)floatValue {
@@ -147,7 +154,7 @@
 #pragma mark - Object Lifecycle
 
 - (instancetype)init {
-    LF_NO_DESIGNATED_INITIALIZER();
+    LTM_NO_DESIGNATED_INITIALIZER();
     return nil;
 }
 

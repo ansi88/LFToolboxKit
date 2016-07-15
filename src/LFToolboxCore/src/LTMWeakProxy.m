@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 live Interactive. All rights reserved.
 //
 
-#import "LFWeakProxy.h"
+#import "LTMWeakProxy.h"
 
 
-@implementation LFWeakProxy
+@implementation LTMWeakProxy
 
 - (instancetype)initWithTarget:(id)target {
     _target = target;
@@ -17,7 +17,7 @@
 }
 
 + (instancetype)proxyWithTarget:(id)target {
-    return [[LFWeakProxy alloc] initWithTarget:target];
+    return [[LTMWeakProxy alloc] initWithTarget:target];
 }
 
 - (id)forwardingTargetForSelector:(SEL)selector {

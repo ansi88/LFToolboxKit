@@ -9,21 +9,28 @@
 #import <UIKit/UIKit.h>
 
 
-@interface LFMath : NSObject
+@interface LTMMath : NSObject
 
 #pragma mark -
-#pragma mark - floor && ceil
-+ (CGRect)floorCGRect:(CGRect)bounds;
+#pragma mark - ceil
 + (CGRect)ceilCGRect:(CGRect)bounds;
 
-+ (CGFloat)floorCGFloat:(CGFloat)floatValue;
-+ (CGFloat)ceilCGFloat:(CGFloat)floatValue;
-
-+ (CGSize)floorCGSize:(CGSize)size;
 + (CGSize)ceilCGSize:(CGSize)size;
 
-+ (CGPoint)floorCGPoint:(CGPoint)point;
 + (CGPoint)ceilCGPoint:(CGPoint)point;
+
++ (CGFloat)ceilCGFloat:(CGFloat)floatValue;
+
+#pragma mark -
+#pragma mark - floor
++ (CGRect)floorCGRect:(CGRect)bounds;
+
++ (CGFloat)floorCGFloat:(CGFloat)floatValue;
+
++ (CGSize)floorCGSize:(CGSize)size;
+
++ (CGPoint)floorCGPoint:(CGPoint)point;
+
 
 #pragma mark -
 #pragma mark - hash

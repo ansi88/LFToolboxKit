@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 /// 用来打破 strong reference circle... 比如 CADisplayLink / NSTimer
-@interface LFWeakProxy : NSProxy
+@interface LTMWeakProxy : NSProxy
 
 @property (nonatomic, weak, readonly) id target;
 

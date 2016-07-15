@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#import "LFPaths.h"
+#import "LTMPaths.h"
 
 #if !defined(__has_feature) || !__has_feature(objc_arc)
 #error "LFCore requires ARC support."

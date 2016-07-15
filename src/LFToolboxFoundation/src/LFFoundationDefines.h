@@ -10,6 +10,8 @@
 #ifndef LFFoundationDefines_h
 #define LFFoundationDefines_h
 
+#import <LTMCoreKit/LTMCoreKitDefines.h>
+
 #ifndef _LFDevLog
     #ifdef DEBUG
         #define _LFDevLog(...) NSLog(__VA_ARGS__)

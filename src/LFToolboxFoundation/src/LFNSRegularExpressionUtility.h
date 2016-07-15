@@ -33,7 +33,9 @@
     @param stop 设置为NO则停止遍历
  	@result
  */
-+ (void)enumerateMatchesInString:(NSString *)string regex:(NSString *)regex usingBlock:(void (^)(NSString *match, NSInteger index, NSRange matchRange, BOOL *stop))block;
++ (void)enumerateMatchesInString:(NSString *)string
+                           regex:(NSString *)regex
+                      usingBlock:(void (^)(NSString *match, NSInteger index, NSRange matchRange, BOOL *stop))block;
 
 /*!
     @method
@@ -48,7 +50,10 @@
     @param stop 设置为NO则停止遍历
     @result
  */
-+ (void)enumerateMatchesInString:(NSString *)string caseInsensitive:(BOOL)caseIns regex:(NSString *)regex usingBlock:(void (^)(NSString *match, NSInteger index, NSRange matchRange, BOOL *stop))block;
++ (void)enumerateMatchesInString:(NSString *)string
+                 caseInsensitive:(BOOL)caseIns
+                           regex:(NSString *)regex
+                      usingBlock:(void (^)(NSString *match, NSInteger index, NSRange matchRange, BOOL *stop))block;
 
 /*!
  	@method
@@ -59,7 +64,9 @@
  	@param 	replacement 	替换的字符串
  	@result
  */
-+ (NSString *)matchsInString:(NSString *)string regex:(NSString *)regex replacedString:(NSString *)replacement;
++ (NSString *)matchsInString:(NSString *)string
+                       regex:(NSString *)regex
+              replacedString:(NSString *)replacement;
 
 
 

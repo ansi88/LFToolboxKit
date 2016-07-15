@@ -6,11 +6,11 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#ifndef LFCore_h
-#define LFCore_h
+#ifndef LTMCoreKit_h
+#define LTMCoreKit_h
 
-#import "LFMath.h"
-#import "LFPaths.h"
-#import "LFWeakProxy.h"
+#import "LTMMath.h"
+#import "LTMPaths.h"
+#import "LTMWeakProxy.h"
 
-#endif /* LFCoreDefines_h */
+#endif /* LTMCoreKit_h */
