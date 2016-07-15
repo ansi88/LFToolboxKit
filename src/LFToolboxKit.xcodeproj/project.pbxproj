@@ -35,7 +35,7 @@
 		CA8A251C1D2B528B002731BC /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25171D2B528B002731BC /* zip.c */; };
 		CA8A251F1D2B60B6002731BC /* LTMStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A251E1D2B60B6002731BC /* LTMStringEncoding.m */; };
 		CA8A25221D2BC884002731BC /* LFRSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25211D2BC884002731BC /* LFRSACryptor.m */; };
-		CA8A25251D2DF5AC002731BC /* LFGeometryUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25241D2DF5AC002731BC /* LFGeometryUtility.m */; };
+		CA8A25251D2DF5AC002731BC /* LTMGeometryUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25241D2DF5AC002731BC /* LTMGeometryUtility.m */; };
 		CA8A25281D2E085C002731BC /* LFUIImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25271D2E085C002731BC /* LFUIImageUtility.m */; };
 		CA8A252E1D2E2992002731BC /* LFGIFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A252C1D2E2992002731BC /* LFGIFImage.m */; };
 		CA8A25311D2E2BE6002731BC /* LTMWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8A25301D2E2BE6002731BC /* LTMWeakProxy.m */; };
@@ -249,8 +249,8 @@
 		CA8A251E1D2B60B6002731BC /* LTMStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTMStringEncoding.m; sourceTree = "<group>"; };
 		CA8A25201D2BC884002731BC /* LFRSACryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFRSACryptor.h; sourceTree = "<group>"; };
 		CA8A25211D2BC884002731BC /* LFRSACryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFRSACryptor.m; sourceTree = "<group>"; };
-		CA8A25231D2DF5AC002731BC /* LFGeometryUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFGeometryUtility.h; sourceTree = "<group>"; };
-		CA8A25241D2DF5AC002731BC /* LFGeometryUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFGeometryUtility.m; sourceTree = "<group>"; };
+		CA8A25231D2DF5AC002731BC /* LTMGeometryUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTMGeometryUtility.h; sourceTree = "<group>"; };
+		CA8A25241D2DF5AC002731BC /* LTMGeometryUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTMGeometryUtility.m; sourceTree = "<group>"; };
 		CA8A25261D2E085C002731BC /* LFUIImageUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUIImageUtility.h; sourceTree = "<group>"; };
 		CA8A25271D2E085C002731BC /* LFUIImageUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUIImageUtility.m; sourceTree = "<group>"; };
 		CA8A252B1D2E2992002731BC /* LFGIFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFGIFImage.h; sourceTree = "<group>"; };
@@ -510,8 +510,8 @@
 				CA8A24A41D24EF26002731BC /* LFViewRecycler.m */,
 				CA8A24D01D26714F002731BC /* LFContentSize.h */,
 				CA8A24D11D26714F002731BC /* LFContentSize.m */,
-				CA8A25231D2DF5AC002731BC /* LFGeometryUtility.h */,
-				CA8A25241D2DF5AC002731BC /* LFGeometryUtility.m */,
+				CA8A25231D2DF5AC002731BC /* LTMGeometryUtility.h */,
+				CA8A25241D2DF5AC002731BC /* LTMGeometryUtility.m */,
 				CA8A25261D2E085C002731BC /* LFUIImageUtility.h */,
 				CA8A25271D2E085C002731BC /* LFUIImageUtility.m */,
 				CA8A252B1D2E2992002731BC /* LFGIFImage.h */,
@@ -955,7 +955,7 @@
 				CA8A252E1D2E2992002731BC /* LFGIFImage.m in Sources */,
 				CA8A24CB1D2660D6002731BC /* LFCommonCryptor.m in Sources */,
 				CA8A24CD1D2660D6002731BC /* LFCommonHMAC.m in Sources */,
-				CA8A25251D2DF5AC002731BC /* LFGeometryUtility.m in Sources */,
+				CA8A25251D2DF5AC002731BC /* LTMGeometryUtility.m in Sources */,
 				CA8A24CA1D2660D6002731BC /* LFCCHexStringEncoding.m in Sources */,
 				CA8A251F1D2B60B6002731BC /* LTMStringEncoding.m in Sources */,
 				CA8A25471D2F9B29002731BC /* LFNSDataUtility.m in Sources */,

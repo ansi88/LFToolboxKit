@@ -1,5 +1,5 @@
 //
-//  LFGeometryUtils.h
+//  LTMGeometryUtils.h
 //  LaiFeng
 //
 //  Created by wangxiaoxiang on 16/6/8.
@@ -9,23 +9,23 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSUInteger, LFScaling) {
-    LFScaleProportionally = 0,   // Fit proportionally
-    LFScaleToFit,                // Forced fit (distort if necessary)
-    LFScaleNone,                 // Don't scale (clip)
-    LFScaleToFillProportionally = 101  // Scale proportionally to fill area
+typedef NS_ENUM(NSUInteger, LTMScaling) {
+    LTMScaleProportionally = 0,   // Fit proportionally
+    LTMScaleToFit,                // Forced fit (distort if necessary)
+    LTMScaleNone,                 // Don't scale (clip)
+    LTMScaleToFillProportionally = 101  // Scale proportionally to fill area
 };
 
-typedef NS_ENUM(NSUInteger, LFRectAlignment) {
-    LFRectAlignCenter = 0,
-    LFRectAlignTop,
-    LFRectAlignTopLeft,
-    LFRectAlignTopRight,
-    LFRectAlignLeft,
-    LFRectAlignBottom,
-    LFRectAlignBottomLeft,
-    LFRectAlignBottomRight,
-    LFRectAlignRight
+typedef NS_ENUM(NSUInteger, LTMRectAlignment) {
+    LTMRectAlignCenter = 0,
+    LTMRectAlignTop,
+    LTMRectAlignTopLeft,
+    LTMRectAlignTopRight,
+    LTMRectAlignLeft,
+    LTMRectAlignBottom,
+    LTMRectAlignBottomLeft,
+    LTMRectAlignBottomRight,
+    LTMRectAlignRight
 };
 
 #pragma mark -
@@ -38,7 +38,7 @@ typedef NS_ENUM(NSUInteger, LFRectAlignment) {
 //
 //  Returns:
 //    point located in the middle of min X side of rect
-CG_INLINE CGPoint LFCGMidMinX(CGRect rect) {
+CG_INLINE CGPoint LTMCGMidMinX(CGRect rect) {
     return CGPointMake(CGRectGetMinX(rect), CGRectGetMidY(rect));
 }
 
@@ -49,7 +49,7 @@ CG_INLINE CGPoint LFCGMidMinX(CGRect rect) {
 //
 //  Returns:
 //    point located in the middle of max X side of rect
-CG_INLINE CGPoint LFCGMidMaxX(CGRect rect) {
+CG_INLINE CGPoint LTMCGMidMaxX(CGRect rect) {
     return CGPointMake(CGRectGetMaxX(rect), CGRectGetMidY(rect));
 }
 
@@ -60,7 +60,7 @@ CG_INLINE CGPoint LFCGMidMaxX(CGRect rect) {
 //
 //  Returns:
 //    point located in the middle of max Y side of rect
-CG_INLINE CGPoint LFCGMidMaxY(CGRect rect) {
+CG_INLINE CGPoint LTMCGMidMaxY(CGRect rect) {
     return CGPointMake(CGRectGetMidX(rect), CGRectGetMaxY(rect));
 }
 
@@ -71,7 +71,7 @@ CG_INLINE CGPoint LFCGMidMaxY(CGRect rect) {
 //
 //  Returns:
 //    point located in the middle of min Y side of rect
-CG_INLINE CGPoint LFCGMidMinY(CGRect rect) {
+CG_INLINE CGPoint LTMCGMidMinY(CGRect rect) {
     return CGPointMake(CGRectGetMidX(rect), CGRectGetMinY(rect));
 }
 
@@ -82,7 +82,7 @@ CG_INLINE CGPoint LFCGMidMinY(CGRect rect) {
 //
 //  Returns:
 //    point located in the center of rect
-CG_INLINE CGPoint LFCGCenter(CGRect rect) {
+CG_INLINE CGPoint LTMCGCenter(CGRect rect) {
     return CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect));
 }
 
@@ -96,7 +96,7 @@ CG_INLINE CGPoint LFCGCenter(CGRect rect) {
 //
 //  Returns:
 //    size of rectangle
-CG_INLINE CGSize LFCGRectSize(CGRect rect) {
+CG_INLINE CGSize LTMCGRectSize(CGRect rect) {
     return CGSizeMake(CGRectGetWidth(rect), CGRectGetHeight(rect));
 }
 
@@ -107,7 +107,7 @@ CG_INLINE CGSize LFCGRectSize(CGRect rect) {
 //
 //  Returns:
 //    rectangle of size (origin 0,0)
-CG_INLINE CGRect LFCGRectOfSize(CGSize size) {
+CG_INLINE CGRect LTMCGRectOfSize(CGSize size) {
     return CGRectMake(0.0f, 0.0f, size.width, size.height);
 }
 
@@ -123,7 +123,7 @@ CG_INLINE CGRect LFCGRectOfSize(CGSize size) {
 //
 //  Returns:
 //    Converted Rect
-CG_INLINE CGRect LFCGRectScale(CGRect inRect, CGFloat xScale, CGFloat yScale) {
+CG_INLINE CGRect LTMCGRectScale(CGRect inRect, CGFloat xScale, CGFloat yScale) {
     return CGRectMake(inRect.origin.x, inRect.origin.y,
                       inRect.size.width * xScale, inRect.size.height * yScale);
 }
@@ -135,16 +135,16 @@ CG_INLINE CGRect LFCGRectScale(CGRect inRect, CGFloat xScale, CGFloat yScale) {
 //    alignee - rect to be aligned
 //    aligner - rect to be aligned from
 //    alignment - way to align the rectangles
-CG_EXTERN CGRect LFCGAlignRectangles(CGRect alignee, CGRect aligner,
-                            LFRectAlignment alignment);
+CG_EXTERN CGRect LTMCGAlignRectangles(CGRect alignee, CGRect aligner,
+                            LTMRectAlignment alignment);
 /// Scale rectangle
 //
 //  Args:
 //    scalee - rect to be scaled
 //    size - size to scale to
 //    scaling - way to scale the rectangle
-CG_EXTERN CGRect LFCGScaleRectangleToSize(CGRect scalee, CGSize size,
-                                 LFScaling scaling);
+CG_EXTERN CGRect LTMCGScaleRectangleToSize(CGRect scalee, CGSize size,
+                                 LTMScaling scaling);
 
 #pragma mark -
 #pragma mark CG - Miscellaneous
@@ -157,7 +157,7 @@ CG_EXTERN CGRect LFCGScaleRectangleToSize(CGRect scalee, CGSize size,
 //
 //  Returns:
 //    Distance
-CG_INLINE CGFloat LFCGDistanceBetweenPoints(CGPoint pt1, CGPoint pt2) {
+CG_INLINE CGFloat LTMCGDistanceBetweenPoints(CGPoint pt1, CGPoint pt2) {
     CGFloat dX = pt1.x - pt2.x;
     CGFloat dY = pt1.y - pt2.y;
 #if CGFLOAT_IS_DOUBLE

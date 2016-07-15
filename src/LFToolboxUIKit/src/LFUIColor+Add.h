@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+UIKIT_EXTERN UIColor * LTMUIColorHRGB(uint32_t rgbValue);
+UIKIT_EXTERN UIColor * LTMUIColorHRGBA(uint32_t rgbaValue);
+UIKIT_EXTERN UIColor * LTMUIColorRGB(uint8_t r, uint8_t g, uint8_t b);
+UIKIT_EXTERN UIColor * LTMUIColorRGBA(uint8_t r, uint8_t g, uint8_t b, CGFloat a);
+
+
+
 UIKIT_EXTERN UIColor *LFUIColorWithHexRGB(uint32_t rgbValue);
 UIKIT_EXTERN UIColor *LFUIColorWithHexRGBA(uint32_t rgbaValue);
 
