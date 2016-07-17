@@ -12,6 +12,7 @@
 		1165F7581D38D96200353C7C /* LTMURLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 1165F7551D38D96200353C7C /* LTMURLArguments.m */; };
 		1165F75D1D38E0A600353C7C /* LTMURLCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1165F75C1D38E0A600353C7C /* LTMURLCoder.m */; };
 		C04288281D3B80FD00BBD0BC /* LTMUIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = C04288271D3B80FD00BBD0BC /* LTMUIImage+Rotate.m */; };
+		C042882B1D3B832A00BBD0BC /* LTMUIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = C042882A1D3B832A00BBD0BC /* LTMUIView+Snapshot.m */; };
 		C0D3560F1D390FC000AA6420 /* LTMNSString+Digits.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3560E1D390FC000AA6420 /* LTMNSString+Digits.m */; };
 		C0D356161D39445900AA6420 /* LTMUIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D356111D39445900AA6420 /* LTMUIImage+Alpha.m */; };
 		C0D356171D39445900AA6420 /* LTMUIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D356131D39445900AA6420 /* LTMUIImage+Resize.m */; };
@@ -199,6 +200,8 @@
 		1165F75C1D38E0A600353C7C /* LTMURLCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTMURLCoder.m; sourceTree = "<group>"; };
 		C04288261D3B80FD00BBD0BC /* LTMUIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LTMUIImage+Rotate.h"; sourceTree = "<group>"; };
 		C04288271D3B80FD00BBD0BC /* LTMUIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LTMUIImage+Rotate.m"; sourceTree = "<group>"; };
+		C04288291D3B832A00BBD0BC /* LTMUIView+Snapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LTMUIView+Snapshot.h"; sourceTree = "<group>"; };
+		C042882A1D3B832A00BBD0BC /* LTMUIView+Snapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LTMUIView+Snapshot.m"; sourceTree = "<group>"; };
 		C0D3560D1D390FC000AA6420 /* LTMNSString+Digits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LTMNSString+Digits.h"; sourceTree = "<group>"; };
 		C0D3560E1D390FC000AA6420 /* LTMNSString+Digits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LTMNSString+Digits.m"; sourceTree = "<group>"; };
 		C0D356101D39445900AA6420 /* LTMUIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LTMUIImage+Alpha.h"; sourceTree = "<group>"; };
@@ -522,6 +525,7 @@
 			isa = PBXGroup;
 			children = (
 				CA8A24A61D24EFE8002731BC /* LFUIKit.h */,
+				CA8A24A71D24F008002731BC /* LFUIKitDefines.h */,
 				C0D356101D39445900AA6420 /* LTMUIImage+Alpha.h */,
 				C0D356111D39445900AA6420 /* LTMUIImage+Alpha.m */,
 				C0D356121D39445900AA6420 /* LTMUIImage+Resize.h */,
@@ -530,7 +534,8 @@
 				C0D356151D39445900AA6420 /* LTMUIImage+RoundedCorner.m */,
 				C04288261D3B80FD00BBD0BC /* LTMUIImage+Rotate.h */,
 				C04288271D3B80FD00BBD0BC /* LTMUIImage+Rotate.m */,
-				CA8A24A71D24F008002731BC /* LFUIKitDefines.h */,
+				C04288291D3B832A00BBD0BC /* LTMUIView+Snapshot.h */,
+				C042882A1D3B832A00BBD0BC /* LTMUIView+Snapshot.m */,
 				CA8A24A31D24EF26002731BC /* LFViewRecycler.h */,
 				CA8A24A41D24EF26002731BC /* LFViewRecycler.m */,
 				CA8A24D01D26714F002731BC /* LFContentSize.h */,
@@ -968,6 +973,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C042882B1D3B832A00BBD0BC /* LTMUIView+Snapshot.m in Sources */,
 				E6B7FC841D3642AE00DBB108 /* LFUIDeviceUtility.m in Sources */,
 				C0D356181D39445900AA6420 /* LTMUIImage+RoundedCorner.m in Sources */,
 				C0D356171D39445900AA6420 /* LTMUIImage+Resize.m in Sources */,
