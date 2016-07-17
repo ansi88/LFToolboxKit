@@ -13,15 +13,15 @@
 
 
 #pragma mark --md5
-+ (NSString *)md5:(NSString *)hashString{
++ (NSString *)MD5:(NSString *)inString{
     
-   return [self md5WithData:[hashString dataUsingEncoding:NSUTF8StringEncoding]];
+   return [self MD5WithData:[inString dataUsingEncoding:NSUTF8StringEncoding]];
     
 }
 
-+ (NSString *)md5WithData:(NSData *)hashData{
++ (NSString *)MD5WithData:(NSData *)inData{
     
-    NSData *md5Data = [LFCommonDigest MD5:hashData];
+    NSData *md5Data = [LFCommonDigest MD5:inData];
     
     NSString *md5String = [LFCCHexStringEncoding encodeData:md5Data];
     

@@ -6,26 +6,26 @@
 //  Copyright (c) Sam Soffes 2010-2014. All rights reserved.
 //
 
-#ifndef _SSZIPARCHIVE_H
-#define _SSZIPARCHIVE_H
+#ifndef LTMZipArchive_h
+#define LTMZipArchive_h
 
 #import <Foundation/Foundation.h>
 #include "unzip.h"
 
-@protocol LFZipArchiveDelegate;
+@protocol LTMZipArchiveDelegate;
 
 /**
  没节操的QQSdk，自己集成了SSZipArchive这个类不改名。。那只能这边自己来改了。。
  
  */
-@interface LFZipArchive : NSObject
+@interface LTMZipArchive : NSObject
 
 // Unzip
 + (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination;
 + (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination overwrite:(BOOL)overwrite password:(NSString *)password error:(NSError **)error;
 
-+ (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination delegate:(id<LFZipArchiveDelegate>)delegate;
-+ (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination overwrite:(BOOL)overwrite password:(NSString *)password error:(NSError **)error delegate:(id<LFZipArchiveDelegate>)delegate;
++ (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination delegate:(id<LTMZipArchiveDelegate>)delegate;
++ (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination overwrite:(BOOL)overwrite password:(NSString *)password error:(NSError **)error delegate:(id<LTMZipArchiveDelegate>)delegate;
 
 // Zip
 + (BOOL)createZipFileAtPath:(NSString *)path withFilesAtPaths:(NSArray *)filenames;
@@ -40,7 +40,7 @@
 @end
 
 
-@protocol LFZipArchiveDelegate <NSObject>
+@protocol LTMZipArchiveDelegate <NSObject>
 
 @optional
 
@@ -53,4 +53,4 @@
 - (void)zipArchiveProgressEvent:(NSInteger)loaded total:(NSInteger)total;
 @end
 
-#endif /* _SSZIPARCHIVE_H */
+#endif /* LTMZipArchive_h */

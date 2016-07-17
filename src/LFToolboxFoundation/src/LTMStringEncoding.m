@@ -110,19 +110,19 @@ FOUNDATION_STATIC_INLINE int lcm(int a, int b) {
 }
 
 + (instancetype)hexStringEncoding {
-    LFStringEncoding *ret = [LFStringEncoding stringEncodingWithString:@"0123456789ABCDEF"];
+    LTMStringEncoding *ret = [LTMStringEncoding stringEncodingWithString:@"0123456789ABCDEF"];
     [ret addDecodeSynonyms:@"AaBbCcDdEeFf"];
     return ret;
 }
 + (instancetype)base64StringEncoding {
-    LFStringEncoding *ret = [self stringEncodingWithString:
+    LTMStringEncoding *ret = [self stringEncodingWithString:
                              @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"];
     [ret setPaddingChar:'='];
     [ret setDoPad:YES];
     return ret;
 }
 + (instancetype)base64WebsafeStringEncoding {
-    LFStringEncoding *ret = [self stringEncodingWithString:
+    LTMStringEncoding *ret = [self stringEncodingWithString:
                              @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"];
     [ret setPaddingChar:'='];
     [ret setDoPad:YES];

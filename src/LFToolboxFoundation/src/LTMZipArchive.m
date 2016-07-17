@@ -6,7 +6,7 @@
 //  Copyright (c) Sam Soffes 2010-2014. All rights reserved.
 //
 
-#import "LFZipArchive.h"
+#import "LTMZipArchive.h"
 #include "zip.h"
 #import "zlib.h"
 #import "zconf.h"
@@ -15,12 +15,12 @@
 
 #define CHUNK 16384
 
-@interface LFZipArchive ()
+@interface LTMZipArchive ()
 + (NSDate *)_dateWithMSDOSFormat:(UInt32)msdosDateTime;
 @end
 
 
-@implementation LFZipArchive {
+@implementation LTMZipArchive {
 	NSString *_path;
 	NSString *_filename;
     zipFile _zip;
@@ -39,12 +39,12 @@
 }
 
 
-+ (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination delegate:(id<LFZipArchiveDelegate>)delegate {
++ (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination delegate:(id<LTMZipArchiveDelegate>)delegate {
 	return [self unzipFileAtPath:path toDestination:destination overwrite:YES password:nil error:nil delegate:delegate];
 }
 
 
-+ (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination overwrite:(BOOL)overwrite password:(NSString *)password error:(NSError **)error delegate:(id<LFZipArchiveDelegate>)delegate {
++ (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination overwrite:(BOOL)overwrite password:(NSString *)password error:(NSError **)error delegate:(id<LTMZipArchiveDelegate>)delegate {
 	// Begin opening
 	zipFile zip = unzOpen((const char*)[path UTF8String]);
 	if (zip == NULL) {
@@ -302,7 +302,7 @@
 
 + (BOOL)createZipFileAtPath:(NSString *)path withFilesAtPaths:(NSArray *)paths {
 	BOOL success = NO;
-	LFZipArchive *zipArchive = [[LFZipArchive alloc] initWithPath:path];
+	LTMZipArchive *zipArchive = [[LTMZipArchive alloc] initWithPath:path];
 	if ([zipArchive open]) {
 		for (NSString *path in paths) {
 			[zipArchive writeFile:path];
@@ -322,7 +322,7 @@
     BOOL success = NO;
 
     NSFileManager *fileManager = nil;
-	LFZipArchive *zipArchive = [[LFZipArchive alloc] initWithPath:path];
+	LTMZipArchive *zipArchive = [[LTMZipArchive alloc] initWithPath:path];
 
 	if ([zipArchive open]) {
         // use a local filemanager (queue/thread compatibility)

@@ -16,10 +16,10 @@
 /// @name md5
 ///=============================================================================
 //md5
-+ (NSString *)md5:(NSString *)hashString;
++ (NSString *)MD5:(NSString *)inString;
 
 //md5
-+ (NSString *)md5WithData:(NSData *)hashData;
++ (NSString *)MD5WithData:(NSData *)inData;
 
 
 ///=============================================================================

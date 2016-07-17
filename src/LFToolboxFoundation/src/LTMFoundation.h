@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Youku. All rights reserved.
 //
 
-#ifndef LFFoundation_h
-#define LFFoundation_h
+#ifndef LTMFoundation_h
+#define LTMFoundation_h
 
 #import "LFZipArchive.h"
 #import "LFNSStringUtility.h"
@@ -20,4 +20,4 @@
 #import "LFNSNotificationCenterUtility.h"
 #import "LFNSDictionaryUtility.h"
 
-#endif /* LFFoundation_h */
+#endif /* LTMFoundation_h */
